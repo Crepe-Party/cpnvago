@@ -15,10 +15,10 @@ Elément regoupant tout le contenu
                 Le logo et le texte de description du site (en rouge)
             Un conteneur des contrôles (en vert)
                 Des contrôles pour filtrer des hôtels (en bleu)
-        Zone de résultat (en vert)
+        Zone des recherches précédentes (en vert)
             Texte décrivant le contenu du dessous (en bleu)
-            Conteneur des résultats de la recherche (en bleu)
-                Un résultat des résultats de la recherche ( en rouge)
+            Conteneur des recherches précédentes (en bleu)
+                Une des recherches précédentes ( en rouge)
 ```
 
 ## Element de la page
@@ -39,4 +39,14 @@ Elément regoupant tout le contenu
 
 3 Le bouton pour effectuer une recherche
 
-4 Le résultat de la recherche va s'afficher ici, uniquement des images et du texte
+4 Recherches précédantes, uniquement des images et du texte
+
+## Responsive
+1er changement lorsque la fenêtre arrive à une largeur de 962px  
+![alt text](responsive1.png)
+
+
+
+2ème changement lorsque la fenêtre arrive à une largeur de 962px  
+![alt text](responsive2.png)
+
