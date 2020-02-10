@@ -42,11 +42,18 @@ Elément regoupant tout le contenu
 4 Recherches précédantes, uniquement des images et du texte
 
 ## Responsive
+
+Les largeurs mesurées ont été efféctuées sur un écran de 1920px de large et firefox developpeur pour le navigateur
+
 1er changement lorsque la fenêtre arrive à une largeur de 962px  
 ![alt text](responsive1.png)
 
-
+- Le logo au centre disparait et celui en haut à gauche apparaît
+- Le menu en haut à gauche passe en mode compact
+- Le bouton de recherche se compacte pour ne laisser que l'icône
 
 2ème changement lorsque la fenêtre arrive à une largeur de 962px  
 ![alt text](responsive2.png)
 
+- Les éléments des options de recherche se séparent sur plusieurs lignes
+- Le bouton prend la totalité de la largeur, l'icône disparait pour laisser place à du texte
