@@ -1,7 +1,7 @@
 var headerComponent = Vue.component('header-component', {
     template: `
     <header class="flex">
-        <div class="logo hidden"/>
+        <div class="logo-menu hidden"/>
         <div class="content-menu flex">
             <button class="btn-header">Se connecter</button> 
             <div>

@@ -8,6 +8,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 150px;
 }
 
 /* input */
@@ -17,21 +18,16 @@ input, select{
     border: none;
     cursor: pointer;
 }
+input[type="date"]{
+    padding: 0;
+}
 button{
     cursor: pointer;
-}
-.search-filter{
-    border: solid 1px lightgray;
-    background-color: rgba(255,255,255,0);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* all pages */
 
-.logo{
+.logo-menu, .logo-home{
     background-image: url('../imgs/logo.png');
     width: 180px;
     height: 60px;
@@ -57,11 +53,14 @@ header > div{
 /* home page */
 
 .home-content{
-    margin: 200px auto 0;
+    margin: 100px auto 0;
 }
 .home-content > div{
     width: 100%;
     justify-content: center;
+}
+.text-find-hotel{
+    font-size: 30px;
 }
 .search-img-logo{
     background-image: url('../imgs/loupe.png');
@@ -72,20 +71,60 @@ header > div{
 }
 .search-img-chamber{
     background-image: url('../imgs/chamber.png');
-
+    
 }
 .search-img-logo, .search-img-calandar, .search-img-chamber{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 5px;
 }
 .search-date-text{
     padding: 5px 20px 0;
+    font-size: 12px;
 }
 .search-btn{
     background-color: #007fad;
     width: 100px;
+    height: 36px;
     color: white;
+    font-weight: bolder;
+}
+.search-filter{
+    border: solid 1px black;
+    border-radius: 2px;
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+.search-text{
+    flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+/* Responsive */
+
+@media (max-width: 980px){
+    .logo-menu{
+        display: flex;
+    }
+    .logo-home, .search-img-logo, .search-img-chamber{
+        display: none;
+    }
+    @media (max-width: 580px){
+        .search-filters{
+            background-color: whitesmoke;
+            flex-wrap: wrap;
+        }
+        .search-btn{
+            width: 100%;
+        }
+
+    }
 }

@@ -2,16 +2,16 @@ var homePage = Vue.component('home-page', {
     template: `
         <div class="home-content">
             <div class="blabla flex">
-                <div class="logo"/>
+                <div class="logo-home"/>
                 <div>
-                    <div><b>Trouvez l’hôtel idéal et comparez les prix de différents sites Web</b></div>
+                    <div class="text-find-hotel"><b>Trouvez l’hôtel idéal et comparez les prix de différents sites Web</b></div>
                     <div>Essayez de rechercher une ville, un hôtel ou même un lieu connu.</div>
                 </div>
             </div>
-            <div class="flex">
-                <div class="search-filter">
+            <div class="flex search-filters">
+                <div class="search-filter search-text">
                     <div class="search-img-logo"/>
-                    <input type="search" placeholder="ex. : Barcelone">
+                    <input class="search-input-text" type="search" placeholder="ex. : Barcelone">
                 </div>
                 <div class="flex search-filter">
                     <div class="search-img-calandar"/>
