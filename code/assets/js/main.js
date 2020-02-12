@@ -3,13 +3,14 @@ var headerComponent = Vue.component('header-component', {
     <header class="flex">
         <div class="logo hidden"/>
         <div class="flex">
-            <div>Se connecter</div> 
+            <button>Se connecter</button> 
             <div>
-                <select>
-                    <option>Consultés récemment</option>
-                    <option>Aperçu - Réservation</option>
-                    <option>Moyens de paiement</option>
-                </select>
+                <button>Menu</button>
+                <div class="hidden">
+                    <div>Consultés récemment</div>
+                    <div>Aperçu - Réservation</div>
+                    <div>Moyens de paiement</div>
+                </div>
             </div> 
             <div>
                 <select>
@@ -78,6 +79,13 @@ var headerComponent = Vue.component('header-component', {
                         <option class="option" value="ZAR">ZAR - Rand sud-africain</option>
                     </optgroup>
                 </select>
+            </div>
+            <div>
+                <button>FR</button>
+                <div class="hidden">
+                    <div>DE - Deutsh</div>
+                    <div>FR - Français</div>
+                </div>
             </div>
         </div>
     </header>
