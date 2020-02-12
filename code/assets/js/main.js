@@ -2,10 +2,10 @@ var headerComponent = Vue.component('header-component', {
     template: `
     <header class="flex">
         <div class="logo hidden"/>
-        <div class="flex">
-            <button>Se connecter</button> 
+        <div class="content-menu flex">
+            <button class="btn-header">Se connecter</button> 
             <div>
-                <button>Menu</button>
+                <button class="btn-header">Menu</button>
                 <div class="hidden">
                     <div>Consultés récemment</div>
                     <div>Aperçu - Réservation</div>
@@ -28,7 +28,7 @@ var headerComponent = Vue.component('header-component', {
                         <option class="option" value="BHD">BHD - Dinar bahreïni </option>
                         <option class="option" value="BRL">BRL - Réal brésilien </option>
                         <option class="option" value="CAD">CAD - Dollar canadien</option>
-                        <option class="option" value="CHF">CHF - Franc suisse</option>
+                        <option class="option" value="CHF" selected>CHF - Franc suisse</option>
                         <option class="option" value="CLP">CLP - Peso chilien </option>
                         <option class="option" value="CNY">CNY - Yuan chinois</option>
                         <option class="option" value="COP">COP - Peso colombien</option>
@@ -81,7 +81,7 @@ var headerComponent = Vue.component('header-component', {
                 </select>
             </div>
             <div>
-                <button>FR</button>
+                <button class="btn-header">FR</button>
                 <div class="hidden">
                     <div>DE - Deutsh</div>
                     <div>FR - Français</div>

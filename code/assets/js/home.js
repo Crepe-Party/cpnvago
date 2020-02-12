@@ -10,39 +10,46 @@ var homePage = Vue.component('home-page', {
             </div>
             <div class="flex">
                 <div class="search-filter">
+                    <div class="search-img-logo"/>
                     <input type="search" placeholder="ex. : Barcelone">
                 </div>
                 <div class="flex search-filter">
+                    <div class="search-img-calandar"/>
                     <div>
-                        <div>Arrivée</div>
+                        <div class="search-date-text">Arrivée</div>
                         <input type="date">
                     </div>
                     <div>
-                        <div>Départ</div>
+                        <div class="search-date-text">Départ</div>
                         <input type="date">
                     </div>
                 </div>
-                <div class="search-filter">
-                    <select>
-                        <option>
+                <button class="search-filter">
+                    <div class="search-img-chamber"/>
+                    <div>
+                        <div>Chambre</div>
+                        <b><div>Chambre double</div></b>
+                    </div>
+                    <div class="hidden">
+                        <div>
                             <img class="single">
                             Chambre simple
-                        </option>
-                        <option>
+                        </div>
+                        <div>
                             <img class="double">
                             Chambre double
-                        </option>
-                        <option>
+                        </div>
+                        <div>
                             <img class="family">
                             Chambres familliales
-                        </option>
-                        <option>
+                        </div>
+                        <div>
                             <img class="multiple">
                             Chambres multiples
-                        </option>
-                    </select>
-                </div>
-                <button>Chercher</button>
+                        </div>
+                    </div>
+                </button>
+                <button class="search-btn">Chercher</button>
             </div>
         </div>
     `
