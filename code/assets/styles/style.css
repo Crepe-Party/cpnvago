@@ -1,0 +1,51 @@
+/* global */
+.hidden{
+    display: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* input */
+
+input, select{
+    padding: 10px;
+    border: none;
+}
+.search-filter{
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/* all pages */
+
+.logo{
+    background-image: url('../imgs/logo.png');
+    width: 150px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header{
+    width: 100%;
+    justify-content: flex-end;
+}
+header > div{
+    align-items: baseline;
+}
+
+/* home page */
+
+.home-content{
+    margin: 200px auto 0;
+}
+.home-content > div{
+    width: 100%;
+    justify-content: center;
+}
