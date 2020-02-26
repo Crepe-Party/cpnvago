@@ -8,7 +8,9 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 150px;
+    min-width: 250px;
+    width: auto !important;
+    width:250px;
 }
 
 /* input */
@@ -35,6 +37,28 @@ button{
     background-size: contain;
     margin: 10px;
 }
+.logo-menu{
+    display: none;
+}
+.title-menu, .burger-menu{
+    display: none;
+}
+.title-menu{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.burger-menu{
+    align-items: center;
+    padding: 0 20px;
+}
+.burger-menu:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.close-menu{
+    font-size: 50px;
+    color: gray;
+}
 header{
     width: 100%;
     justify-content: flex-end;
@@ -50,6 +74,29 @@ header > div{
 .content-menu > *{
     margin: 0 5px;
 }
+#menuList{
+    position: fixed;
+    border: solid 1px gray;
+    padding: 5px;
+    border-radius: 5px;
+    top: 55px;
+}
+#languageList{
+    position: fixed;
+    border: solid 1px gray;
+    padding: 5px;
+    border-radius: 5px;
+    top: 55px;
+    right: 10px;
+}
+#menuList>div, #languageList>div{
+    cursor: pointer;
+    font-size: 14px;
+}
+#menuList>div:hover, #languageList>div:hover{
+    background-color: lightblue;
+}
+
 /* home page */
 
 .home-content{
@@ -102,13 +149,16 @@ header > div{
     margin: 5px;
     flex-shrink: 0;
 }
-
 .search-text{
     flex-basis: 300px;
     flex-shrink: 1;
 }
 
 /* Responsive */
+
+.display-menu{
+    width: 100%;
+}
 
 @media (max-width: 980px){
     .logo-menu{
@@ -117,6 +167,31 @@ header > div{
     .logo-home, .search-img-logo, .search-img-chamber{
         display: none;
     }
+    .content-menu{
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255,255,255);
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .content-menu>*{
+        width: 100%;
+        border-bottom: solid 1px lightgray;
+        min-height: 50px;
+        display: flex;
+        align-content: center;
+    }
+    .title-menu, .burger-menu, .close-menu{
+        display: flex;
+    }
+    #languageList{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
     @media (max-width: 580px){
         .search-filters{
             background-color: whitesmoke;
