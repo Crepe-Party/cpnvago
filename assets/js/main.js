@@ -9,13 +9,13 @@ var headerComponent = Vue.component('header-component', {
         <div class="logo-menu"/>
         <div v-on:click="openBurgerMenu" class="burger-menu">Menu</div>
         <div id="contentMenu" class="content-menu flex">
-            <div class="flex">
+            <div class="flex head-burger-menu">
                 <div v-on:click="closeBurgerMenu" class="close-menu hidden"><</div>
                 <div class="title-menu">Menu</div>
             </div>
             <button class="btn-header">Se connecter</button> 
             <div>
-                <button v-on:click="displayMenuList" class="btn-header">Menu</button>
+                <button v-on:click="displayMenuList" class="btn-header btn-menu">Menu</button>
                 <div id="menuList" class="hidden">
                     <div>Consultés récemment</div>
                     <div>Aperçu - Réservation</div>
