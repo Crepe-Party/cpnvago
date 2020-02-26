@@ -3,15 +3,15 @@
     <header class="flex">
       <div class="logo-menu" />
       <div v-on:click="openBurgerMenu" class="burger-menu">Menu</div>
-      <div ref="contentMenu" class="content-menu flex">
-        <div class="flex">
+      <div id="contentMenu" ref="contentMenu" class="content-menu flex">
+        <div class="flex head-burger-menu">
           <div v-on:click="closeBurgerMenu" class="close-menu hidden">&lt;</div>
           <div class="title-menu">Menu</div>
         </div>
         <button class="btn-header">Se connecter</button>
         <div>
-          <button v-on:click="displayMenuList" class="btn-header">Menu</button>
-          <div ref="menuList" class="hidden">
+          <button v-on:click="displayMenuList" class="btn-header btn-menu">Menu</button>
+          <div id="menuList" ref="menuList" class="hidden">
             <div>Consultés récemment</div>
             <div>Aperçu - Réservation</div>
             <div>Moyens de paiement</div>
@@ -87,7 +87,7 @@
         </div>
         <div>
           <button v-on:click="displayLanguageList" class="btn-header">{{ language }}</button>
-          <div ref="languageList" class="hidden">
+          <div id="languageList" class="hidden">
             <div v-on:click="changelanguage('DE')">DE - Deutsh</div>
             <div v-on:click="changelanguage('FR')">FR - Français</div>
           </div>
@@ -101,27 +101,27 @@
 export default {
   name: "top-menu",
   props: {},
-  data:()=>{
-      return{language: ''}
+  data: () => {
+    return { language: "" };
   },
   methods: {
-        displayMenuList: function(){
-            this.$refs.menuList.classList.toggle('hidden');
-        },
-        displayLanguageList: function(){
-            this.$refs.languageList.classList.toggle('hidden');
-        },
-        changelanguage: function(lang){
-            this.language = lang;
-            this.displayLanguageList();
-        },
-        openBurgerMenu: function(){
-            this.$refs.contentMenu.style.left = 0;
-        },
-        closeBurgerMenu: function(){
-            this.$refs.contentMenu.style.left = '100%';
-        }
+    displayMenuList: function() {
+      this.$refs.menuList.classList.toggle("hidden");
+    },
+    displayLanguageList: function() {
+      this.$refs.languageList.classList.toggle("hidden");
+    },
+    changelanguage: function(lang) {
+      this.language = lang;
+      this.displayLanguageList();
+    },
+    openBurgerMenu: function() {
+      this.$refs.contentMenu.style.left = 0;
+    },
+    closeBurgerMenu: function() {
+      this.$refs.contentMenu.style.left = "100%";
     }
+  }
 };
 </script>
 

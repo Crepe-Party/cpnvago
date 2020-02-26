@@ -27,26 +27,26 @@
       </div>
       <button class="search-filter">
         <div class="search-img-chamber" />
-        <div>
+        <div v-on:click="displayRoom">
           <div>Chambre</div>
           <b>
-            <div>Chambre double</div>
+            <div>{{ room }}</div>
           </b>
         </div>
-        <div class="hidden">
-          <div>
+        <div id="roomList" ref="roomList" class="hidden">
+          <div v-on:click="room='Chambre simple'">
             <img class="single" />
             Chambre simple
           </div>
-          <div>
+          <div v-on:click="room='Chambre double'">
             <img class="double" />
             Chambre double
           </div>
-          <div>
+          <div v-on:click="room='Chambre familliales'">
             <img class="family" />
             Chambres familliales
           </div>
-          <div>
+          <div v-on:click="room='Chambre multiples'">
             <img class="multiple" />
             Chambres multiples
           </div>
@@ -60,7 +60,17 @@
 <script>
 export default {
   name: "Home",
-  props: {}
+  props: {},
+  data: function(){
+        return {
+            room : 'Chambre double'
+        }
+    },
+  methods: {
+    displayRoom: function() {
+      this.$refs.roomList.classList.toggle("");
+    }
+  }
 };
 </script>
 
