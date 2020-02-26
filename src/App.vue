@@ -1,43 +1,40 @@
 <template>
   <div id="app">
-    <div id="topMenu">
-      <router-link to="/hello_world">Hello!</router-link>
-       | 
-      <router-link to="/home">Home!</router-link>
-    </div>
-    <router-view>
-    </router-view>
+    <!--top menu -->
+    <top-menu/>
+    <!-- content -->
+    <router-view/>
   </div>
 </template>
 
 <script>
+
 import Vue from "vue";
 import VueRouter from "vue-router";
 //components
-import HelloWorld from "./components/HelloWorld.vue";
-import Home from "./components/Home.vue";
+import TopMenu from "./components/TopMenu.vue";
+//views
+import HelloWorld from "./views/HelloWorld.vue";
+import Home from "./views/Home.vue";
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: [
+    { path: "/", component: Home },
     { path: "/home", component: Home },
     { path: "/hello_world", component: HelloWorld },
   ]
 });
+const components = {
+  TopMenu
+};
 export default {
   name: "App",
-  router
+  router,
+  components
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="css">
+@import './assets/styles/style.css';
 </style>
