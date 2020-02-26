@@ -1,12 +1,22 @@
 var headerComponent = Vue.component('header-component', {
+    data: function(){
+        return{
+            language: 'FR'
+        }
+    },
     template: `
     <header class="flex">
-        <div class="logo-menu hidden"/>
-        <div class="content-menu flex">
+        <div class="logo-menu"/>
+        <div v-on:click="openBurgerMenu" class="burger-menu">Menu</div>
+        <div id="contentMenu" class="content-menu flex">
+            <div class="flex head-burger-menu">
+                <div v-on:click="closeBurgerMenu" class="close-menu hidden"><</div>
+                <div class="title-menu">Menu</div>
+            </div>
             <button class="btn-header">Se connecter</button> 
             <div>
-                <button class="btn-header">Menu</button>
-                <div class="hidden">
+                <button v-on:click="displayMenuList" class="btn-header btn-menu">Menu</button>
+                <div id="menuList" class="hidden">
                     <div>Consultés récemment</div>
                     <div>Aperçu - Réservation</div>
                     <div>Moyens de paiement</div>
@@ -81,15 +91,33 @@ var headerComponent = Vue.component('header-component', {
                 </select>
             </div>
             <div>
-                <button class="btn-header">FR</button>
-                <div class="hidden">
-                    <div>DE - Deutsh</div>
-                    <div>FR - Français</div>
+                <button v-on:click="displayLanguageList"class="btn-header">{{ language }}</button>
+                <div id="languageList" class="hidden">
+                    <div v-on:click="changelanguage('DE')">DE - Deutsh</div>
+                    <div v-on:click="changelanguage('FR')">FR - Français</div>
                 </div>
             </div>
         </div>
     </header>
-    `
+    `,
+    methods: {
+        displayMenuList: function(){
+            menuList.classList.toggle('hidden');
+        },
+        displayLanguageList: function(){
+            languageList.classList.toggle('hidden');
+        },
+        changelanguage: function(lang){
+            this.language = lang;
+            this.displayLanguageList();
+        },
+        openBurgerMenu: function(){
+            contentMenu.style.left = 0;
+        },
+        closeBurgerMenu: function(){
+            contentMenu.style.left = '100%';
+        }
+    }
 })
 
 var app = new Vue({
