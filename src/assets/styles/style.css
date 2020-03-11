@@ -1,3 +1,10 @@
+/* Variable */
+
+body{
+    --max-width-medium: 720px;
+    --max-width-small: 540px;
+}
+
 /* global */
 .hidden{
     display: none;
@@ -111,73 +118,6 @@ header > div{
     background-color: lightblue;
 }
 
-/* home page */
-
-.home-content{
-    margin: 100px auto 0;
-}
-.home-content > div{
-    width: 100%;
-    justify-content: center;
-}
-.text-find-hotel{
-    font-size: 30px;
-}
-.search-img-logo{
-    background-image: url('../imgs/loupe.png');
-}
-.search-img-calandar{
-    background-image: url('../imgs/calandar.png');
-    
-}
-.search-img-chamber{
-    background-image: url('../imgs/chamber.png');
-    
-}
-.search-img-logo, .search-img-calandar, .search-img-chamber{
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 5px;
-}
-.search-date-text{
-    padding: 5px 20px 0;
-    font-size: 12px;
-}
-.search-btn{
-    background-color: #007fad;
-    width: 100px;
-    height: 36px;
-    color: white;
-    font-weight: bolder;
-}
-.search-filter{
-    border: solid 1px black;
-    border-radius: 2px;
-    background-color: rgb(255,255,255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    margin: 5px;
-    flex-shrink: 0;
-}
-.search-text{
-    flex-basis: 300px;
-    flex-shrink: 1;
-}
-#roomList{
-    position: absolute;
-    border: solid 1px gray;
-    padding: 5px;
-    border-radius: 5px;
-    right: 20%;
-}
-#roomList>*{
-    padding: 5px;
-}
-
 /* Responsive */
 
 .display-menu{
@@ -225,14 +165,9 @@ header > div{
         border: none;
         width: 100%;
     }    
-    @media (max-width: 540px){
-        .search-filters{
-            background-color: whitesmoke;
-            flex-wrap: wrap;
-        }
+    @media (max-width: 540px){ 
         .search-btn{
             width: 100%;
-        }
-        
+        } 
     }
 }
