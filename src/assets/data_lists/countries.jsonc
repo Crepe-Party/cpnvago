@@ -1,0 +1,23 @@
+{
+    "switzerland": {
+        "languages": ["fr", "de", "it"],
+        "default_language": "de"
+    },
+    "france": {
+        "languages": ["fr"],
+        "default_language": "fr"
+    },
+    "germany": {
+        "languages": ["de"],
+        "default_language": "de"
+    },
+    "italy": {
+        "languages": ["it"],
+        "default_language": "it"
+    }
+    // template
+    // "": {
+    //     "languages": [""],
+    //     "default_language": ""
+    // },
+}
