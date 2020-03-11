@@ -79,6 +79,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.logo-home{
+    background-image: url('../assets/imgs/logo.png');
+    width: 180px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+}
 .home-content{
     margin: 100px auto 0;
 }
@@ -155,6 +163,9 @@ export default {
   display: none;
 }
 @media (max-width: 720px){
+  .logo-home{
+    display: none;
+  }
   .icon-search{
     display: flex;
   }

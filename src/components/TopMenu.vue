@@ -128,7 +128,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.logo-menu, .logo-home{
+.logo-menu{
     background-image: url('../assets/imgs/logo.png');
     width: 180px;
     height: 60px;
@@ -216,7 +216,7 @@ header > div{
     .logo-menu{
         display: flex;
     }
-    .logo-home, .search-img-logo, .search-img-chamber{
+    .search-img-logo, .search-img-chamber{
         display: none;
     }
     .content-menu{
@@ -252,6 +252,10 @@ header > div{
         position: initial;
         border: none;
         width: 100%;
+    }
+    .logo-menu{
+      width: 120px;
+      height: 40px;
     }    
 }
 </style>
