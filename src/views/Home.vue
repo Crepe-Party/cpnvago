@@ -165,6 +165,12 @@ export default {
     display: none;
   }
   @media (max-width: 540px){
+    .search-text{
+      flex-basis: 100%;
+    }
+    .search-input-text{
+      width: 100%;
+    }
     .icon-search{
     display: none;
     }
