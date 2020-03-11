@@ -1,0 +1,48 @@
+{
+    "main_title":{
+        "en": "Find your ideal hotel and compare prices from different websites",
+        "fr": "Trouvez l’hôtel idéal et comparez les prix de différents sites Web"
+    },
+    "main_subtitle":{
+        "en": "Try searching for a city, a specific hotel, or even a landmark!",
+        "fr": "Essayez de rechercher une ville, un hôtel ou même un lieu connu."
+    },
+    "destination_placeholder":{
+        "en": "Enter a hotel name or destination",
+        "fr": "Saisir un nom d'hotel ou une destination"
+    },
+    "search":{
+        "en": "Search",
+        "fr": "Chercher"
+    },
+    "start_date_description":{
+        "en": "Check in",
+        "fr": "Départ"
+    },
+    "end_date_description":{
+        "en": "Check out",
+        "fr": "Arrivée"
+    },
+    "select_date_placeholder":{
+        "en": "Select Date",
+        "fr": "--/--/--"
+    },
+    "room_description":{
+        "en": "Room",
+        "fr": "Chambre"
+    },
+    "menu_login_button":{
+        "en": "Log in",
+        "fr": "Se connecter"
+    },
+    "menu_button":{
+        "en": "Menu",
+        "fr": "Menu"
+    }
+    
+    // copy-paste template
+    // "":{
+    //     "en": "",
+    //     "fr": ""
+    // },
+}
