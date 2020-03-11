@@ -184,7 +184,7 @@ header > div{
     width: 100%;
 }
 
-@media (max-width: 960px){
+@media (max-width: 720px){
     .logo-menu{
         display: flex;
     }
@@ -224,19 +224,15 @@ header > div{
         position: initial;
         border: none;
         width: 100%;
-    }
-    @media (max-width: 720px){
-
-
-        @media (max-width: 540px){
-            .search-filters{
-                background-color: whitesmoke;
-                flex-wrap: wrap;
-            }
-            .search-btn{
-                width: 100%;
-            }
-            
+    }    
+    @media (max-width: 540px){
+        .search-filters{
+            background-color: whitesmoke;
+            flex-wrap: wrap;
         }
+        .search-btn{
+            width: 100%;
+        }
+        
     }
 }
