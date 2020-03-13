@@ -1,3 +1,4 @@
+
 const data_header = {
     url_logo: '../assets/imgs/logo.png',
     menu_list: [
@@ -69,5 +70,8 @@ const data_header = {
         'VND': 'VND - Dong vietnamien',
         'ZAR': 'ZAR - Rand sud-africain'
     }
+}
+
+const data_home = {
     
 }
