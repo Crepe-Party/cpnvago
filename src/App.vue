@@ -21,8 +21,8 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: [
-    { path: "/", component: Home },
-    { path: "/home", component: Home },
+    { path: "/", component: Home, props: datahome},
+    { path: "/home", component: Home, props: datahome},
     { path: "/hello_world", component: HelloWorld },
   ]
 });
@@ -31,7 +31,8 @@ const components = {
   TopMenu
 };
 
-import Menu from '../data/header'
+import datamenu from '../data/header'
+import datahome from '../data/home'
 
 export default {
   name: "App",
@@ -39,7 +40,8 @@ export default {
   components,
   data (){
   return {
-      datamenu:Menu
+      datamenu,
+      datahome
   }}
 };
 
