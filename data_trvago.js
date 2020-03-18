@@ -1,11 +1,11 @@
 
 const data_header = {
     url_logo: '../assets/imgs/logo.png',
-    menu_list: [
-        'Consultés récemment',
-        'Aperçu - Réservation',
-        'Moyens de paiement'
-    ],
+    menu_list: {
+        1: 'Consultés récemment',
+        2: 'Aperçu - Réservation',
+        3: 'Moyens de paiement'
+    },
     main_currency: {
         'EUR': 'EUR - Euro',
         'GBP': 'GBP - Livre sterling',
@@ -73,5 +73,15 @@ const data_header = {
 }
 
 const data_home = {
-    
+    url_logo: '../assets/imgs/logo.png',
+    text_list: [
+        "Trouvez l’hôtel idéal et comparez les prix de différents sites Web",
+        "Essayez de rechercher une ville, un hôtel ou même un lieu connu."
+    ],
+    room_list: {
+        'single_room': 'Chambre simple',
+        'double_room': 'Chambre double',
+        'family_room': 'Chambres familliales',
+        'multiple_room': 'Chambres multiples'
+    }
 }
