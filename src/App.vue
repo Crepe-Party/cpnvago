@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--top menu -->
-    <top-menu/>
+    <top-menu :datamenu="datamenu"/>
     <!-- content -->
     <router-view/>
   </div>
@@ -26,14 +26,23 @@ const router = new VueRouter({
     { path: "/hello_world", component: HelloWorld },
   ]
 });
+
 const components = {
   TopMenu
 };
+
+import Menu from '../data/header'
+
 export default {
   name: "App",
   router,
-  components
+  components,
+  data (){
+  return {
+      datamenu:Menu
+  }}
 };
+
 </script>
 <style lang="css">
 @import './assets/styles/style.css';

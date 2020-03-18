@@ -1,11 +1,10 @@
-
-const data_header = {
+module.exports = {
     url_logo: '../assets/imgs/logo.png',
-    menu_list: {
-        1: 'Consultés récemment',
-        2: 'Aperçu - Réservation',
-        3: 'Moyens de paiement'
-    },
+    menu_list: [
+        {title: 'Consultés récemment'},
+        {title: 'Aperçu - Réservation'},
+        {title: 'Moyens de paiement'}
+    ],
     main_currency: {
         'EUR': 'EUR - Euro',
         'GBP': 'GBP - Livre sterling',

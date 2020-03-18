@@ -12,9 +12,7 @@
         <div>
           <button v-on:click="displayMenuList" class="btn-header btn-menu">Menu</button>
           <div id="menuList" ref="menuList" class="hidden">
-            <div>Consultés récemment</div>
-            <div>Aperçu - Réservation</div>
-            <div>Moyens de paiement</div>
+            <div v-for="list in datamenu.menu_list" :key="list.key">{{list.title}}</div>
           </div>
         </div>
         <div>
@@ -100,7 +98,9 @@
 <script>
 export default {
   name: "top-menu",
-  props: {},
+  props: {
+    datamenu: Object,
+  },
   data: () => {
     return { language: "" };
   },
