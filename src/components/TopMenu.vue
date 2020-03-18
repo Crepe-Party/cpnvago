@@ -86,11 +86,9 @@
           </select>
         </div>
         <div>
-          <button v-on:click="displayLanguageList" class="btn-header">{{ language }}</button>
-          <div id="languageList" class="hidden">
-            <div v-on:click="changelanguage('DE')">DE - Deutsh</div>
-            <div v-on:click="changelanguage('FR')">FR - Français</div>
-          </div>
+          <select v-on:change="changelanguage">
+            <option v-for="language of languages" :key="language">{{language.toUpperCase()}}</option>
+          </select>
         </div>
       </div>
     </header>
@@ -102,7 +100,7 @@ export default {
   name: "top-menu",
   props: {},
   data: () => {
-    return { language: "" };
+    return { languages: ["fr", "de"] };
   },
   methods: {
     displayMenuList: function() {
@@ -111,7 +109,8 @@ export default {
     displayLanguageList: function() {
       this.$refs.languageList.classList.toggle("hidden");
     },
-    changelanguage: function(lang) {
+    changeLanguage: function(lang) {
+      console.log("hohoho");
       this.language = lang;
       this.displayLanguageList();
     },
