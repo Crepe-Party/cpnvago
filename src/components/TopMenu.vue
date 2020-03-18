@@ -44,7 +44,9 @@ export default {
     datamenu: Object,
   },
   data: () => {
-    return { language: "" };
+    return { 
+      language: "",
+    };
   },
   methods: {
     displayMenuList: function() {
@@ -71,7 +73,7 @@ export default {
 <style scoped>
 
 .logo-menu{
-    background-image: url('../assets/imgs/logo.png');
+    background-image: url(../assets/imgs/logo.png);
     width: 180px;
     height: 60px;
     background-repeat: no-repeat;

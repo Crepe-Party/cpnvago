@@ -1,5 +1,5 @@
 module.exports = {
-    url_logo: '../assets/imgs/logo.png',
+    url_logo: './assets/imgs/logo.png',
     menu_list: [
         {title: 'Consultés récemment'},
         {title: 'Aperçu - Réservation'},

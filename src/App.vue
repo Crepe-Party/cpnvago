@@ -21,8 +21,8 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: [
-    { path: "/", component: Home, props: datahome},
-    { path: "/home", component: Home, props: datahome},
+    { path: "/", component: Home, props: { datahome: datahome }},
+    { path: "/home", component: Home, props: { datahome: datahome }},
     { path: "/hello_world", component: HelloWorld },
   ]
 });
