@@ -1,14 +1,14 @@
 {
-    "CHF": {
+    "chf": {
         "sign": "CHF"
     },
-    "EUR":{
+    "eur":{
         "sign": "€"
     },
-    "USD": {
+    "usd": {
         "sign": "$"
     },
-    "GBP": {
+    "gbp": {
         "sign": "£"
     }
 }

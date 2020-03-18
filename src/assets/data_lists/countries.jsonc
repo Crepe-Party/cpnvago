@@ -1,111 +1,111 @@
 {
     "Switzerland": {
-        "languages": ["FR", "GE", "IT"],
-        "default_language": "GE",
+        "languages": ["fr", "ge", "it"],
+        "default_language": "ge",
         "prefix": true,
         "default_currency" : "CHF" 
     },
     "France": {
-        "languages": ["FR"],
-        "default_language": "FR",
+        "languages": ["fr"],
+        "default_language": "fr",
         "prefix": true,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
-    "italy": {
-        "languages": ["IT"],
-        "default_language": "IT",
+    "Italy": {
+        "languages": ["it"],
+        "default_language": "it",
         "prefix": true,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
     "العالم العربي": {
-        "languages": ["EN","AR"],
-        "default_language": "AR",
+        "languages": ["en","ar"],
+        "default_language": "ar",
         "prefix": false,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "Argentina": {
-        "languages": ["ES"],
-        "default_language": "ES",
+        "languages": ["es"],
+        "default_language": "es",
         "prefix": false,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "Australia": {
-        "languages": ["EN"],
-        "default_language": "EN",
+        "languages": ["en"],
+        "default_language": "en",
         "prefix": false,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "България": {
-        "languages": ["BU"],
-        "default_language": "BU",
+        "languages": ["bu"],
+        "default_language": "bu",
         "prefix": true,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
     "België": {
-        "languages": ["DU","FR","GE"],
+        "languages": ["du","fr","ge"],
         "default_language": "BE",
         "prefix": false,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
     "Brasil": {
-        "languages": ["PT"],
-        "default_language": "PT",
+        "languages": ["pt"],
+        "default_language": "pt",
         "prefix": false,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "Canada": {
-        "languages": ["EN","FR"],
-        "default_language": "FR",
+        "languages": ["en","fr"],
+        "default_language": "fr",
         "prefix": false,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
     "Česko": {
-        "languages": ["CZ"],
-        "default_language": "CZ",
+        "languages": ["cz"],
+        "default_language": "cz",
         "prefix": true,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
     "Chile": {
-        "languages": ["ES"],
-        "default_language": "ES",
+        "languages": ["es"],
+        "default_language": "es",
         "prefix": false,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "Colombia": {
-        "languages": ["ES"],
-        "default_language": "ES",
+        "languages": ["es"],
+        "default_language": "es",
         "prefix": false,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "Danmark": {
-        "languages": ["DA"],
-        "default_language": "DA",
+        "languages": ["da"],
+        "default_language": "da",
         "prefix": true,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
     "Deutschland": {
-        "languages": ["GE"],
-        "default_language": "GE",
+        "languages": ["ge"],
+        "default_language": "ge",
         "prefix": true,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     },
     "Ecuador": {
-        "languages": ["ES"],
-        "default_language": "ES",
+        "languages": ["es"],
+        "default_language": "es",
         "prefix": false,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "Ελλάδα": {
         "languages": ["GR"],
         "default_language": "GR",
         "prefix": true,
-        "default_currency" : "USD" 
+        "default_currency" : "usd" 
     },
     "España": {
-        "languages": ["ES"],
-        "default_language": "ES",
+        "languages": ["es"],
+        "default_language": "es",
         "prefix": true,
-        "default_currency" : "EUR" 
+        "default_currency" : "eur" 
     }
     // template
     // "": {
