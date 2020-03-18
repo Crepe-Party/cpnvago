@@ -1,5 +1,4 @@
-
-const data_header = {
+module.exports = {
     url_logo: '../assets/imgs/logo.png',
     menu_list: {
         1: 'Consultés récemment',
