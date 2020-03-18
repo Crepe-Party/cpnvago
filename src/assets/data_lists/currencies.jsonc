@@ -1,14 +1,14 @@
 {
-    "switzerland": {
-        "currency": "CHF"
+    "CHF": {
+        "sign": "CHF"
     },
-    "france": {
-        "currency": "€"
+    "EUR":{
+        "sign": "€"
     },
-    "germany": {
-        "currency": "€"
+    "USD": {
+        "sign": "$"
     },
-    "italy": {
-        "currency": "€"
+    "GBP": {
+        "sign": "£"
     }
 }

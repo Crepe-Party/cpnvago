@@ -1,19 +1,111 @@
 {
-    "switzerland": {
-        "languages": ["fr", "de", "it"],
-        "default_language": "de"
+    "Switzerland": {
+        "languages": ["FR", "GE", "IT"],
+        "default_language": "GE",
+        "prefix": true,
+        "default_currency" : "CHF" 
     },
-    "france": {
-        "languages": ["fr"],
-        "default_language": "fr"
-    },
-    "germany": {
-        "languages": ["de"],
-        "default_language": "de"
+    "France": {
+        "languages": ["FR"],
+        "default_language": "FR",
+        "prefix": true,
+        "default_currency" : "EUR" 
     },
     "italy": {
-        "languages": ["it"],
-        "default_language": "it"
+        "languages": ["IT"],
+        "default_language": "IT",
+        "prefix": true,
+        "default_currency" : "EUR" 
+    },
+    "العالم العربي": {
+        "languages": ["EN","AR"],
+        "default_language": "AR",
+        "prefix": false,
+        "default_currency" : "USD" 
+    },
+    "Argentina": {
+        "languages": ["ES"],
+        "default_language": "ES",
+        "prefix": false,
+        "default_currency" : "USD" 
+    },
+    "Australia": {
+        "languages": ["EN"],
+        "default_language": "EN",
+        "prefix": false,
+        "default_currency" : "USD" 
+    },
+    "България": {
+        "languages": ["BU"],
+        "default_language": "BU",
+        "prefix": true,
+        "default_currency" : "EUR" 
+    },
+    "België": {
+        "languages": ["DU","FR","GE"],
+        "default_language": "BE",
+        "prefix": false,
+        "default_currency" : "EUR" 
+    },
+    "Brasil": {
+        "languages": ["PT"],
+        "default_language": "PT",
+        "prefix": false,
+        "default_currency" : "USD" 
+    },
+    "Canada": {
+        "languages": ["EN","FR"],
+        "default_language": "FR",
+        "prefix": false,
+        "default_currency" : "EUR" 
+    },
+    "Česko": {
+        "languages": ["CZ"],
+        "default_language": "CZ",
+        "prefix": true,
+        "default_currency" : "EUR" 
+    },
+    "Chile": {
+        "languages": ["ES"],
+        "default_language": "ES",
+        "prefix": false,
+        "default_currency" : "USD" 
+    },
+    "Colombia": {
+        "languages": ["ES"],
+        "default_language": "ES",
+        "prefix": false,
+        "default_currency" : "USD" 
+    },
+    "Danmark": {
+        "languages": ["DA"],
+        "default_language": "DA",
+        "prefix": true,
+        "default_currency" : "EUR" 
+    },
+    "Deutschland": {
+        "languages": ["GE"],
+        "default_language": "GE",
+        "prefix": true,
+        "default_currency" : "EUR" 
+    },
+    "Ecuador": {
+        "languages": ["ES"],
+        "default_language": "ES",
+        "prefix": false,
+        "default_currency" : "USD" 
+    },
+    "Ελλάδα": {
+        "languages": ["GR"],
+        "default_language": "GR",
+        "prefix": true,
+        "default_currency" : "USD" 
+    },
+    "España": {
+        "languages": ["ES"],
+        "default_language": "ES",
+        "prefix": true,
+        "default_currency" : "EUR" 
     }
     // template
     // "": {
