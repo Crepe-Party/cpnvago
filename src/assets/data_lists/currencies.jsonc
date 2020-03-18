@@ -1,0 +1,14 @@
+{
+    "switzerland": {
+        "currency": "CHF",
+    },
+    "france": {
+        "currency": "€"
+    },
+    "germany": {
+        "currency": "€"
+    },
+    "italy": {
+        "currency": "€"
+    }
+}

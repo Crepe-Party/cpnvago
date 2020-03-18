@@ -24,7 +24,7 @@
         "fr": "Arrivée"
     },
     "select_date_placeholder": {
-        "en": "Select Date",
+        "en": "--/--/--",
         "fr": "--/--/--"
     },
     "room_description": {
@@ -40,10 +40,6 @@
         "fr": "Menu"
     }
     //COUNTRIES
-    "": {
-        "en": "",
-        "fr": ""
-    },
     // copy-paste template
     // "":{
     //     "en": "",
