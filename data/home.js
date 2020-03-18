@@ -1,4 +1,4 @@
-const data_home = {
+module.exports = {
     url_logo: '../assets/imgs/logo.png',
     text_list: [
         "Trouvez l’hôtel idéal et comparez les prix de différents sites Web",
