@@ -42,16 +42,18 @@ export default {
   router,
   components,
   data (){
-  return {
-      datamenu,
-      datahome,
-      countries,
-      currencies,
-      translator
-  }}
+    return {
+        datamenu,
+        datahome,
+        countries,
+        currencies,
+        translator
+    }
+  }
 };
 
 console.log(countries, currencies, translator);
+
 </script>
 <style lang="css">
 @import './assets/styles/style.css';

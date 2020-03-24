@@ -27,9 +27,13 @@
         "en": "--/--/--",
         "fr": "--/--/--"
     },
+    "room_display": {
+        "en" : "Room",
+        "fr" : "Chambre"
+    },
     "room_description": {
-        "en": "Room",
-        "fr": "Chambre"
+        "en": ["signle room", "Double room", "Family rooms", "Multiple rooms"],
+        "fr": ["Chambre simple", "Chambre double", "Chambres familiales", "Chambres multiples"]
     },
     "menu_login_button": {
         "en": "Log in",
@@ -38,5 +42,9 @@
     "menu_button": {
         "en": "Menu",
         "fr": "Menu"
+    },
+    "menu_list": {
+        "en" : ["Recently viewed", "Booking overview", "Payment methods"],
+        "fr" : ["Consulté récemment", "Aperçu - Réservations", "Moyens de paiement"]
     }
 }
