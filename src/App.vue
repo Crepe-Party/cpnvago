@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--top menu -->
-    <top-menu/>
+    <top-menu :datamenu="datamenu"/>
     <!-- content -->
     <router-view/>
   </div>
@@ -21,19 +21,30 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: [
-    { path: "/", component: Home },
-    { path: "/home", component: Home },
+    { path: "/", component: Home, props: { datahome: datahome }},
+    { path: "/home", component: Home, props: { datahome: datahome }},
     { path: "/hello_world", component: HelloWorld },
   ]
 });
+
 const components = {
   TopMenu
 };
+
+import datamenu from '../data/header'
+import datahome from '../data/home'
+
 export default {
   name: "App",
   router,
-  components
+  components,
+  data (){
+  return {
+      datamenu,
+      datahome
+  }}
 };
+
 </script>
 <style lang="css">
 @import './assets/styles/style.css';

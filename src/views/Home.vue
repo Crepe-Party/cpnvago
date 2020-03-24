@@ -4,9 +4,9 @@
       <div class="logo-home" />
       <div>
         <div class="text-find-hotel">
-          <b>Trouvez l’hôtel idéal et comparez les prix de différents sites Web</b>
+          <b>{{datahome.title}}</b>
         </div>
-        <div>Essayez de rechercher une ville, un hôtel ou même un lieu connu.</div>
+        <div>{{datahome.text}}</div>
       </div>
     </div>
     <div class="flex search-filters">
@@ -34,21 +34,9 @@
           </b>
         </div>
         <div id="roomList" ref="roomList" class="hidden">
-          <div v-on:click="room='Chambre simple'">
-            <img class="single" />
-            Chambre simple
-          </div>
-          <div v-on:click="room='Chambre double'">
-            <img class="double" />
-            Chambre double
-          </div>
-          <div v-on:click="room='Chambre familliales'">
-            <img class="family" />
-            Chambres familliales
-          </div>
-          <div v-on:click="room='Chambre multiples'">
-            <img class="multiple" />
-            Chambres multiples
+          <div v-for="room_list in datahome.room_list" :key="room_list.key" v-on:click="room=room_list.text">
+            <img :class="room_list.value" />
+            {{room_list.text}}
           </div>
         </div>
       </button>
@@ -63,7 +51,9 @@
 <script>
 export default {
   name: "Home",
-  props: {},
+  props: {
+    datahome: Object,
+  },
   data: function(){
         return {
             room : 'Chambre double'
@@ -71,7 +61,7 @@ export default {
     },
   methods: {
     displayRoom: function() {
-      this.$refs.roomList.classList.toggle("");
+      this.$refs.roomList.classList.toggle("hidden");
     }
   }
 };
@@ -149,7 +139,7 @@ export default {
     border: solid 1px gray;
     padding: 5px;
     border-radius: 5px;
-    right: 20%;
+    right: 32%;
 }
 #roomList>*{
     padding: 5px;
