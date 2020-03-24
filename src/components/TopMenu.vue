@@ -27,7 +27,7 @@
         </div>
         <div>
           <button v-on:click="displayLanguageList" class="btn-header">{{ language }}</button>
-          <div id="languageList" class="hidden">
+          <div id="languageList" ref="languageList" class="hidden">
             <div v-on:click="changelanguage('DE')">DE - Deutsh</div>
             <div v-on:click="changelanguage('FR')">FR - Français</div>
           </div>
@@ -45,7 +45,7 @@ export default {
   },
   data: () => {
     return { 
-      language: "",
+      language: "EN",
     };
   },
   methods: {
@@ -57,6 +57,7 @@ export default {
     },
     changelanguage: function(lang) {
       this.language = lang;
+      this.currency = 
       this.displayLanguageList();
     },
     openBurgerMenu: function() {

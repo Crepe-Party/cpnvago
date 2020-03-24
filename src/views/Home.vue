@@ -61,7 +61,7 @@ export default {
     },
   methods: {
     displayRoom: function() {
-      this.$refs.roomList.classList.toggle("");
+      this.$refs.roomList.classList.toggle("hidden");
     }
   }
 };
@@ -139,7 +139,7 @@ export default {
     border: solid 1px gray;
     padding: 5px;
     border-radius: 5px;
-    right: 20%;
+    right: 32%;
 }
 #roomList>*{
     padding: 5px;
