@@ -3,10 +3,10 @@
     <div class="blabla flex">
       <div class="logo-home" />
       <div>
-        <div class="text-find-hotel">
+        <!-- <div class="text-find-hotel">
           <b>{{datahome.title}}</b>
         </div>
-        <div>{{datahome.text}}</div>
+        <div>{{datahome.text}}</div> -->
       </div>
     </div>
     <div class="flex search-filters">
@@ -27,17 +27,17 @@
       </div>
       <button class="search-filter">
         <div class="search-img-chamber" />
-        <div v-on:click="displayRoom">
+        <!-- <div v-on:click="displayRoom">
           <div>Chambre</div>
           <b>
             <div>{{ room }}</div>
           </b>
-        </div>
+        </div> -->
         <div id="roomList" ref="roomList" class="hidden">
-          <div v-for="room_list in datahome.room_list" :key="room_list.key" v-on:click="room=room_list.text">
+          <!-- <div v-for="room_list in datahome.room_list" :key="room_list.key" v-on:click="room=room_list.text">
             <img :class="room_list.value" />
             {{room_list.text}}
-          </div>
+          </div> -->
         </div>
       </button>
       <button class="search-btn">
@@ -52,7 +52,9 @@
 export default {
   name: "Home",
   props: {
-    datahome: Object,
+    a: Object,
+    b: Object,
+    c: Object
   },
   data: function(){
         return {
