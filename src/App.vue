@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--top menu -->
-    <top-menu :datamenu="datamenu"/>
+    <top-menu :currencies="currencies" :countries="countries" :translator="translator"/>
     <!-- content -->
     <router-view/>
   </div>
@@ -21,7 +21,7 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: [
-    { path: "/", component: Home, props: {a: currencies, b: countries, c: translator }},
+    { path: "/", component: Home, props: {currencies: currencies, countries: countries, translator: translator }},
     { path: "/home", component: Home, props: {currencies: currencies, countries: countries, translator: translator }},
     { path: "/hello_world", component: HelloWorld },
   ]

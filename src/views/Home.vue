@@ -52,9 +52,9 @@
 export default {
   name: "Home",
   props: {
-    a: Object,
-    b: Object,
-    c: Object
+    currencies: Object,
+    countries: Object,
+    translator: Object
   },
   data: function(){
         return {
