@@ -21,8 +21,8 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: [
-    { path: "/", component: Home, props: { datahome: datahome }},
-    { path: "/home", component: Home, props: { datahome: datahome }},
+    { path: "/", component: Home, props: {currencies: currencies, countries: countries, translator: translator }},
+    { path: "/home", component: Home, props: {currencies: currencies, countries: countries, translator: translator }},
     { path: "/hello_world", component: HelloWorld },
   ]
 });
@@ -31,8 +31,6 @@ const components = {
   TopMenu
 };
 
-import datamenu from '../data/header'
-import datahome from '../data/home'
 import countries from '../data/countries.json'
 import currencies from '../data/currencies.json'
 import translator from '../data/translator.json'
@@ -43,8 +41,6 @@ export default {
   components,
   data (){
   return {
-      datamenu,
-      datahome,
       countries,
       currencies,
       translator
