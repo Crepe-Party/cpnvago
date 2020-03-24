@@ -107,9 +107,4 @@
         "prefix": true,
         "default_currency" : "eur" 
     }
-    // template
-    // "": {
-    //     "languages": [""],
-    //     "default_language": ""
-    // },
 }

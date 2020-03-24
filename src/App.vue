@@ -33,6 +33,9 @@ const components = {
 
 import datamenu from '../data/header'
 import datahome from '../data/home'
+import countries from '../data/countries.json'
+import currencies from '../data/currencies.json'
+import translator from '../data/translator.json'
 
 export default {
   name: "App",
@@ -41,10 +44,14 @@ export default {
   data (){
   return {
       datamenu,
-      datahome
+      datahome,
+      countries,
+      currencies,
+      translator
   }}
 };
 
+console.log(countries, currencies, translator);
 </script>
 <style lang="css">
 @import './assets/styles/style.css';
