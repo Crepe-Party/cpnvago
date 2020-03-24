@@ -40,6 +40,9 @@ export default {
   name: "top-menu",
   props: {
     datamenu: Object,
+    currencies: Object,
+    countries: Object,
+    translator: Object
   },
   data: () => {
     return { 
@@ -50,13 +53,9 @@ export default {
     displayMenuList: function() {
       this.$refs.menuList.classList.toggle("hidden");
     },
-    displayLanguageList: function() {
-      this.$refs.languageList.classList.toggle("hidden");
-    },
     changeLanguage: function(lang) {
       console.log("hohoho");
       this.language = lang;
-      //this.currency = this.displayLanguageList();
     },
     openBurgerMenu: function() {
       this.$refs.contentMenu.style.left = 0;
