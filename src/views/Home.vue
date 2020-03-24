@@ -12,36 +12,36 @@
     <div class="flex search-filters">
       <div class="search-filter search-text">
         <div class="search-img-logo" />
-        <input class="search-input-text" type="search" placeholder="ex. : Barcelone" />
+        <input class="search-input-text" type="search" :placeholder="translator.destination_placeholder[language]"/>
       </div>
       <div class="flex search-filter">
         <div class="search-img-calandar" />
         <div>
-          <div class="search-date-text">Arrivée</div>
+          <div class="search-date-text">{{translator.start_date_description[language]}}</div>
           <input type="date" />
         </div>
         <div>
-          <div class="search-date-text">Départ</div>
+          <div class="search-date-text">{{translator.end_date_description[language]}}</div>
           <input type="date" />
         </div>
       </div>
       <button class="search-filter">
         <div class="search-img-chamber" />
-        <!-- <div v-on:click="displayRoom">
-          <div>Chambre</div>
+          <div v-on:click="displayRoom">
+          <div>{{translator.room_display[language]}}</div>
           <b>
-            <div>{{ room }}</div>
+            <div>{{ translator.menu_list[language][0] }}</div> 
           </b>
-        </div> -->
+        </div>
         <div id="roomList" ref="roomList" class="hidden">
-          <!-- <div v-for="room_list in datahome.room_list" :key="room_list.key" v-on:click="room=room_list.text">
-            <img :class="room_list.value" />
-            {{room_list.text}}
-          </div> -->
+          <div v-for="room_list in translator.menu_list[language]" :key="room_list.key" v-on:click="room=room_list">
+            <img :class="room_list" />
+            {{room_list}}
+          </div>
         </div>
       </button>
       <button class="search-btn">
-        <div>Chercher</div>
+        <div>{{translator.search[language]}}</div>
         <div class="icon-search"></div>
       </button>
     </div>
@@ -52,13 +52,11 @@
 export default {
   name: "Home",
   props: {
-    currencies: Object,
-    countries: Object,
     translator: Object
   },
   data: function(){
         return {
-            room : 'Chambre double'
+            language : "fr"
         }
     },
   methods: {

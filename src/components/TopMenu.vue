@@ -6,22 +6,19 @@
       <div id="contentMenu" ref="contentMenu" class="content-menu flex">
         <div class="flex head-burger-menu">
           <div v-on:click="closeBurgerMenu" class="close-menu hidden">&lt;</div>
-          <div class="title-menu">Menu</div>
+          <div class="title-menu">{{translator.menu_button[language]}}</div>
         </div>
-        <button class="btn-header">Se connecter</button>
+        <button class="btn-header">{{translator.menu_login_button[language]}}</button>
         <div>
           <button v-on:click="displayMenuList" class="btn-header btn-menu">Menu</button>
           <div id="menuList" ref="menuList" class="hidden">
-            <div v-for="list in datamenu.menu_list" :key="list.key">{{list.title}}</div>
+            <div v-for="list in translator.menu_list[language]" :key="list.key">{{list}}</div>
           </div>
         </div>
         <div>
           <select>
-            <optgroup label="Devises principales">
-              <option v-for="currency in datamenu.main_currency" :key="currency.key" class="option" :value="currency.value">{{currency.text}}</option>
-            </optgroup>
             <optgroup label="Toutes les devises">
-              <option v-for="currency in datamenu.other_currency" :key="currency.key" class="option" :value="currency.value">{{currency.text}}</option>
+              <option v-for="currency in currencies" :key="currency.key" class="option" :value="currency.key">{{currency.text}}</option>
             </optgroup>
           </select>
         </div>
@@ -39,14 +36,13 @@
 export default {
   name: "top-menu",
   props: {
-    datamenu: Object,
     currencies: Object,
     countries: Object,
     translator: Object
   },
   data: () => {
     return { 
-      languages: ["fr", "de"]
+      language: "fr"
     };
   },
   methods: {
