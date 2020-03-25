@@ -18,7 +18,7 @@
         <div>
           <select>
             <optgroup label="Toutes les devises">
-              <option v-for="currency in currencies" :key="currency.key" class="option" :value="currency.key">{{currency.text}}</option>
+              <option :selected="index.toUpperCase() == countries[country].default_currency.toUpperCase()" v-for="(currency,index) in currencies" :key="index" class="option" :value="index">{{currency.text}}</option>
             </optgroup>
           </select>
         </div>
@@ -48,8 +48,6 @@ export default {
     },
     changeLanguage: function(lang) {
       this.$emit('langset', lang.target.value);
-      console.log(lang)
-      /* this.$emit('currset', lang.target.key); */
     },
     openBurgerMenu: function() {
       this.$refs.contentMenu.style.left = 0;
