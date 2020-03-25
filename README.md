@@ -1,10 +1,5 @@
 # cpnvago
-RIA1 Trivagio knockoff
-
-Git flow the project
-
-# cpnvago
-RIA1 Trivagio knockoff
+RIA1 Trivago knockoff
 
 Git flow the project
 
