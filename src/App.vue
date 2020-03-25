@@ -32,7 +32,7 @@ export default {
   components,
   data (){
     return {
-        language: "fr",
+        language: "ge",
         country: "Switzerland",
         currencies,
         countries,
@@ -45,6 +45,7 @@ export default {
     },
     countryupdate: function(country){
       this.country = country;
+      this.langupdate(this.countries[this.country].default_language);
     }
   },
 };
