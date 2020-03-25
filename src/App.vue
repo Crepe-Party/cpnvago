@@ -55,6 +55,7 @@ export default {
     },
     countryupdate: function(country) {
       this.country = country;
+      this.langupdate(this.countries[this.country].default_language);
     }
   }
 };
