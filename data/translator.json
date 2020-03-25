@@ -72,12 +72,21 @@
         "it" : ["Visualizzati di recente", "Panoramica - Prenotazioni", "Mezzi di pagamento"]
     },
     "footer_contact_description": {
-        "fr": "Vous souhaitez recevoir des offres exclusives ? Inscrivez-vous à notre newsletter !"
+        "fr": "Vous souhaitez recevoir des offres exclusives ? Inscrivez-vous à notre newsletter !",
+        "en": "Would you like to receive exclusive offers? Subscribe to our newsletter!",
+        "ge": "Möchten Sie exklusive Angebote erhalten? Abonnieren Sie unseren Newsletter!",
+        "it": "Volete ricevere offerte esclusive? Iscriviti alla nostra newsletter!"
     },
     "email_address":{
-        "fr": "Adresse e-mail"
+        "fr": "Adresse e-mail",
+        "en": "E-mail address",
+        "ge": "Die E-Mail-Adresse",
+        "it": "Indirizzo e-mail"
     },
     "sign_up":{
-        "fr": "S'inscrire"
+        "fr": "S'inscrire",
+        "en": "Sign up now",
+        "ge": "Melden Sie sich jetzt an",
+        "it": "Iscriviti ora"
     }
 }
