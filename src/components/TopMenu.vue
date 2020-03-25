@@ -6,31 +6,26 @@
       <div id="contentMenu" ref="contentMenu" class="content-menu flex">
         <div class="flex head-burger-menu">
           <div v-on:click="closeBurgerMenu" class="close-menu hidden">&lt;</div>
-          <div class="title-menu">Menu</div>
+          <div class="title-menu">{{translator.menu_button[language]}}</div>
         </div>
-        <button class="btn-header">Se connecter</button>
+        <button class="btn-header">{{translator.menu_login_button[language]}}</button>
         <div>
           <button v-on:click="displayMenuList" class="btn-header btn-menu">Menu</button>
           <div id="menuList" ref="menuList" class="hidden">
-            <div v-for="list in datamenu.menu_list" :key="list.key">{{list.title}}</div>
+            <div v-for="list in translator.menu_list[language]" :key="list.key">{{list}}</div>
           </div>
         </div>
         <div>
           <select>
-            <optgroup label="Devises principales">
-              <option v-for="currency in datamenu.main_currency" :key="currency.key" class="option" :value="currency.value">{{currency.text}}</option>
-            </optgroup>
             <optgroup label="Toutes les devises">
-              <option v-for="currency in datamenu.other_currency" :key="currency.key" class="option" :value="currency.value">{{currency.text}}</option>
+              <option :selected="index.toUpperCase() == countries[country].default_currency.toUpperCase()" v-for="(currency,index) in currencies" :key="index" class="option" :value="index">{{currency.text}}</option>
             </optgroup>
           </select>
         </div>
         <div>
-          <button v-on:click="displayLanguageList" class="btn-header">{{ language }}</button>
-          <div id="languageList" ref="languageList" class="hidden">
-            <div v-on:click="changelanguage('DE')">DE - Deutsh</div>
-            <div v-on:click="changelanguage('FR')">FR - Français</div>
-          </div>
+          <select v-on:change="changeLanguage($event)">
+            <option :selected="language == countries[country].default_language" v-for="language of countries[country].languages" :key="language" :value="language">{{language.toUpperCase()}}</option>
+          </select>
         </div>
       </div>
     </header>
@@ -41,24 +36,18 @@
 export default {
   name: "top-menu",
   props: {
-    datamenu: Object,
-  },
-  data: () => {
-    return { 
-      language: "EN",
-    };
+    currencies: Object,
+    countries: Object,
+    translator: Object,
+    language: String,
+    country: String
   },
   methods: {
     displayMenuList: function() {
       this.$refs.menuList.classList.toggle("hidden");
     },
-    displayLanguageList: function() {
-      this.$refs.languageList.classList.toggle("hidden");
-    },
-    changelanguage: function(lang) {
-      this.language = lang;
-      this.currency = 
-      this.displayLanguageList();
+    changeLanguage: function(lang) {
+      this.$emit('langset', lang.target.value);
     },
     openBurgerMenu: function() {
       this.$refs.contentMenu.style.left = 0;
