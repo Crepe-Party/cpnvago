@@ -1,0 +1,230 @@
+{
+    "AED": {
+        "sign": "د.إ",
+        "text": "AED - Dirham des E.A.U"
+    },
+    "ARS": {
+        "sign": "$",
+        "text": "ARS - Peso argentino"
+    },
+    "AUD": {
+        "sign": "A$",
+        "text": "AUD - Dollar australien"
+    },
+    "AZN": {
+        "sign": "qəpik",
+        "text": "AZN - Manat azerbaïdjanais"
+    },
+    "BGN": {
+        "sign": "Лв",
+        "text": "BGN - Lev bulgare"
+    },
+    "BHD": {
+        "sign": ".د.ب",
+        "text": "BHD - Dinar bahreïni"
+    },
+    "BRL": {
+        "sign": "R$",
+        "text": "BRL - Réal brésilien"
+    },
+    "CAD": {
+        "sign": "C$",
+        "text": "CAD - Dollar canadien"
+    },
+    "CHF": {
+        "sign": "Fr.",
+        "text": "CHF - Franc suisse"
+    },
+    "CLP": {
+        "sign": "$",
+        "text": "CLP - Peso chilien"
+    },
+    "CNY": {
+        "sign": "¥",
+        "text": "CNY - Yuan chinois"
+    },
+    "COP": {
+        "sign": "$",
+        "text": "COP - Peso colombien"
+    },
+    "CZK": {
+        "sign": "Kč",
+        "text": "CZK - Couronne tchèque"
+    },
+    "DKK": {
+        "sign": "Kr.",
+        "text": "DKK - Couronne danoise"
+    },
+    "DZD": {
+        "sign": "دج",
+        "text": "DZD - Dinar algérien"
+    },
+    "EGP": {
+        "sign": "ج.م",
+        "text": "EGP - Livre égyptienne"
+    },
+    "EUR": {
+        "sign": "€",
+        "text": "EUR - Euro"
+    },
+    "GBP": {
+        "sign": "£",
+        "text": "GBP - Livre sterling"
+    },
+    "HKD": {
+        "sign": "HK$",
+        "text": "HKD - Dollar Hong Kong"
+    },
+    "HRK": {
+        "sign": "kn",
+        "text": "HRK - Kuna croate"
+    },
+    "HUF": {
+        "sign": "Ft",
+        "text": "HUF - Forint hongrois"
+    },
+    "IDR": {
+        "sign": "Rp",
+        "text": "IDR - Roupie indonésienne"
+    },
+    "ILS": {
+        "sign": "₪",
+        "text": "ILS - Nouveau shekel israélien"
+    },
+    "INR": {
+        "sign": "₹",
+        "text": "INR - Roupie indienne"
+    },
+    "JOD": {
+        "sign": "د.ا",
+        "text": "JOD - Dinar jordanien"
+    },
+    "JPY": {
+        "sign": "¥",
+        "text": "JPY - Yen japonais"
+    },
+    "KRW": {
+        "sign": "₩",
+        "text": "KRW - Won sud-coréen"
+    },
+    "KWD": {
+        "sign": "د.ك",
+        "text": "KWD - Dinar koweïtien"
+    },
+    "KZT": {
+        "sign": "₸",
+        "text": "KZT - Tenge kazakh"
+    },
+    "LBP": {
+        "sign": "ل.ل.",
+        "text": "LBP - Livre libanaise"
+    },
+    "MAD": {
+        "sign": "MAD",
+        "text": "MAD - Dirham marocain"
+    },
+    "MDL": {
+        "sign": "L",
+        "text": "MDL - Leu moldave"
+    },
+    "MXN": {
+        "sign": "Mex$",
+        "text": "MXN - Peso mexicain"
+    },
+    "MYR": {
+        "sign": "RM",
+        "text": "MYR - Ringgit malais"
+    },
+    "NGN": {
+        "sign": "₦",
+        "text": "NGN - Naira nigérien"
+    },
+    "NOK": {
+        "sign": "kr",
+        "text": "NOK - Couronne norvégienne"
+    },
+    "NZD": {
+        "sign": "$",
+        "text": "NZD - Dollar néo-zélandais"
+    },
+    "OMR": {
+        "sign": "ر.ع.",
+        "text": "OMR - Rial omanais"
+    },
+    "PEN": {
+        "sign": "S/",
+        "text": "PEN - Nuevo sol péruvien"
+    },
+    "PHP": {
+        "sign": "₱",
+        "text": "PHP - Peso philippin"
+    },
+    "PLN": {
+        "sign": "zł",
+        "text": "PLN - Zloty polonais"
+    },
+    "QAR": {
+        "sign": "ر.ق",
+        "text": "QAR - Riyal qatari"
+    },
+    "RON": {
+        "sign": "lei",
+        "text": "RON - Leu roumain"
+    },
+    "RSD": {
+        "sign": "din",
+        "text": "RSD - Dinar serbe"
+    },
+    "RUB": {
+        "sign": "$",
+        "text": "RUB - Rouble russe"
+    },
+    "SAR": {
+        "sign": "﷼",
+        "text": "SAR - Riyal saoudien"
+    },
+    "SEK": {
+        "sign": "kr",
+        "text": "SEK - Couronne suédoise"
+    },
+    "SGD": {
+        "sign": "S$",
+        "text": "SGD - Dollar de Singapour"
+    },
+    "THB": {
+        "sign": "฿",
+        "text": "THB - Baht thaïlandais"
+    },
+    "TND": {
+        "sign": "د.ت",
+        "text": "TND - Dinar tunisien"
+    },
+    "TRY": {
+        "sign": "₺",
+        "text": "TRY - Livre turque"
+    },
+    "TWD": {
+        "sign": "NT$",
+        "text": "TWD - Nouveau dollar taïwanais"
+    },
+    "UAH": {
+        "sign": "₴",
+        "text": "UAH - Hyrvnia ukrainien"
+    },
+    "USD": {
+        "sign": "$",
+        "text": "USD - Dollar américain"
+    },
+    "UYU": {
+        "sign": "$U",
+        "text": "UYU - Peso uruguayen"
+    },
+    "VND": {
+        "sign": "₫",
+        "text": "VND - Dong vietnamien"
+    },
+    "ZAR": {
+        "sign": "R",
+        "text": "ZAR - Rand sud-africain"
+    }
+}
