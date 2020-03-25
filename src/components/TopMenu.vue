@@ -23,8 +23,8 @@
           </select>
         </div>
         <div>
-          <select v-on:change="changelanguage">
-            <option v-for="language of languages" :key="language">{{language.toUpperCase()}}</option>
+          <select>
+            <option v-for="language of countries.Switzerland.languages" :key="language">{{language.toUpperCase()}}</option>
           </select>
         </div>
       </div>
