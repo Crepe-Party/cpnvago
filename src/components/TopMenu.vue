@@ -23,8 +23,8 @@
           </select>
         </div>
         <div>
-          <select>
-            <option v-for="language of countries.Switzerland.languages" :key="language">{{language.toUpperCase()}}</option>
+          <select v-on:change="changeLanguage($event)">
+            <option :selected="language == countries[country].default_language" v-for="language of countries[country].languages" :key="language" :value="language">{{language.toUpperCase()}}</option>
           </select>
         </div>
       </div>
@@ -38,20 +38,18 @@ export default {
   props: {
     currencies: Object,
     countries: Object,
-    translator: Object
-  },
-  data: () => {
-    return { 
-      languages: ["fr","en"],
-    };
+    translator: Object,
+    language: String,
+    country: String
   },
   methods: {
     displayMenuList: function() {
       this.$refs.menuList.classList.toggle("hidden");
     },
     changeLanguage: function(lang) {
-      this.language = lang;
-      this.$emit('langset', lang);
+      this.$emit('langset', lang.target.value);
+      console.log(lang)
+      /* this.$emit('currset', lang.target.key); */
     },
     openBurgerMenu: function() {
       this.$refs.contentMenu.style.left = 0;

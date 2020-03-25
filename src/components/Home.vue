@@ -3,10 +3,10 @@
     <div class="blabla flex">
       <div class="logo-home" />
       <div>
-        <!-- <div class="text-find-hotel">
-          <b>{{datahome.title}}</b>
+        <div class="text-find-hotel">
+          <b>{{translator.main_title[language]}}</b>
         </div>
-        <div>{{datahome.text}}</div> -->
+        <div>{{translator.main_subtitle[language]}}</div>
       </div>
     </div>
     <div class="flex search-filters">
@@ -50,15 +50,11 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "home",
   props: {
-    translator: Object
+    translator: Object,
+    language: String
   },
-  data: function(){
-        return {
-            language : "fr"
-        }
-    },
   methods: {
     displayRoom: function() {
       this.$refs.roomList.classList.toggle("hidden");

@@ -1,6 +1,6 @@
 {
     "Switzerland": {
-        "languages": ["fr", "ge", "it"],
+        "languages": ["fr", "en","ge"],
         "default_language": "ge",
         "prefix": true,
         "default_currency" : "CHF" 
