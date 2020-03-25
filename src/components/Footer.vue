@@ -1,7 +1,7 @@
 <template>
   <div class="footer-content">
-    <select>
-        <option v-for="pays in countries" :key="pays.key" class="option" :value="pays.key">{{pays.key}}</option>
+    <select v-on:change="changeCountry($event)">
+        <option :selected="index == country" v-for="(value,index) in countries" :key="index" class="option" :value="index">{{index}}</option>
     </select>
   </div>
 </template>
@@ -10,10 +10,13 @@
 export default {
   name: "footer",
   props: {
-    coutries: Object,
+    countries: Object,
     country: String,
   },
-  methods: {
+  methods:  {
+      changeCountry: function(country) {
+      this.$emit('countryset', country.target.value);
+    },
   }
 };
 </script>

@@ -5,7 +5,7 @@
     <!-- content -->
     <home :translator="translator" :language="language"/>
     <!-- footer -->
-    <footer :countries="countries" :country="country"/>
+    <Footer @countryset="countryupdate"  :countries="countries" :country="country"/>
   </div>
 </template>
 
@@ -42,6 +42,9 @@ export default {
   methods: {
     langupdate: function(lang){
       this.language = lang;
+    },
+    countryupdate: function(country){
+      this.country = country;
     }
   },
 };
