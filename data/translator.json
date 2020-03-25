@@ -46,5 +46,14 @@
     "menu_list": {
         "en" : ["Recently viewed", "Booking overview", "Payment methods"],
         "fr" : ["Consulté récemment", "Aperçu - Réservations", "Moyens de paiement"]
+    },
+    "footer_contact_description": {
+        "fr": "Vous souhaitez recevoir des offres exclusives ? Inscrivez-vous à notre newsletter !"
+    },
+    "email_address":{
+        "fr": "Adresse e-mail"
+    },
+    "sign_up":{
+        "fr": "S'inscrire"
     }
 }

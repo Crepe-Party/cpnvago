@@ -75,6 +75,7 @@ export default {
 }
 .home-content{
     margin: 100px auto 0;
+    min-height: 100vh;
 }
 .home-content > div{
     width: 100%;
