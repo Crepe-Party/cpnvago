@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--top menu -->
-    <top-menu :currencies="currencies" :countries="countries" :translator="translator"/>
+    <top-menu @langset="langupdate" :currencies="currencies" :countries="countries" :translator="translator"/>
     <!-- content -->
     <router-view/>
   </div>
@@ -43,9 +43,15 @@ export default {
     return {
         countries,
         currencies,
-        translator
+        translator,
+        language: "test"
     }
-  }
+  },
+  methods: {
+    langupdate: function(lang){
+      console.log(lang);
+    }
+  },
 };
 
 console.log(countries, currencies, translator);

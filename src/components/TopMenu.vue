@@ -42,7 +42,7 @@ export default {
   },
   data: () => {
     return { 
-      language: "fr"
+      languages: ["fr","en"],
     };
   },
   methods: {
@@ -50,8 +50,8 @@ export default {
       this.$refs.menuList.classList.toggle("hidden");
     },
     changeLanguage: function(lang) {
-      console.log("hohoho");
       this.language = lang;
+      this.$emit('langset', lang);
     },
     openBurgerMenu: function() {
       this.$refs.contentMenu.style.left = 0;
