@@ -10,7 +10,7 @@
         </div>
         <button class="btn-header">{{translator.menu_login_button[language]}}</button>
         <div>
-          <button v-on:click="displayMenuList" class="btn-header btn-menu">Menu</button>
+          <button v-on:click="displayMenuList" class="btn-header btn-menu">{{translator.menu_button[language]}}</button>
           <div id="menuList" ref="menuList" class="hidden">
             <div v-for="list in translator.menu_list[language]" :key="list.key">{{list}}</div>
           </div>

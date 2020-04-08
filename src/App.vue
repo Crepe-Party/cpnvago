@@ -2,7 +2,7 @@
   <div id="app">
     <!--top menu -->
     <top-menu
-      @langset="langupdate"
+      @langset="langUpdate"
       :country="country"
       :language="language"
       :currencies="currencies"
@@ -13,7 +13,7 @@
     <home :translator="translator" :language="language" />
     <!-- footer -->
     <Footer
-      @countryset="countryupdate"
+      @countrySet="countryUpdate"
       :countries="countries"
       :country="country"
       :translator="translator"
