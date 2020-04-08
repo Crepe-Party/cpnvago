@@ -91,8 +91,6 @@ footer {
   background-color: #293339;
   padding: 15px;
 }
-#contact-zone {
-}
 #contact-zone > label {
   display: block;
 }

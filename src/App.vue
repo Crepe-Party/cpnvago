@@ -50,12 +50,12 @@ export default {
     };
   },
   methods: {
-    langupdate: function(lang) {
+    langUpdate: function(lang) {
       this.language = lang;
     },
-    countryupdate: function(country) {
+    countryUpdate: function(country) {
       this.country = country;
-      this.langupdate(this.countries[this.country].default_language);
+      this.langUpdate(this.countries[this.country].default_language);
     }
   }
 };
