@@ -22,6 +22,9 @@
   </div>
 </template>
 <script>
+//modules
+import axios from "axios";
+
 //components
 import TopMenu from "./components/TopMenu.vue";
 import Home from "./components/Home.vue";
@@ -32,11 +35,6 @@ const components = {
   Home,
   Footer
 };
-
-import axios from "axios";
-// import countries from "../data/countries.json";
-// import currencies from "../data/currencies.json";
-// import translator from "../data/translator.json";
 
 export default {
   name: "App",
@@ -50,8 +48,18 @@ export default {
       translator: null
     };
   },
-  beforeMount(){
-    this.fetchData()
+  async created() {
+    try {
+      //get data before to create component (theory)
+      const currencies = await axios.get("http://localhost:3000/currencies");
+      const countries = await axios.get("http://localhost:3000/countries");
+      const translator = await axios.get("http://localhost:3000/translator");
+      this.currencies = currencies.data;
+      this.countries = countries.data;
+      this.translator = translator.data;
+    } catch (error) {
+      console.log(error)
+    }
   },
   methods: {
     langUpdate: function(lang) {
@@ -60,17 +68,6 @@ export default {
     countryUpdate: function(country) {
       this.country = country;
       this.langUpdate(this.countries[this.country].default_language);
-    },
-    fetchData() {
-      axios
-        .get("http://localhost:3000/currencies")
-        .then(res => (this.currencies = res.data));
-      axios
-        .get("http://localhost:3000/countries")
-        .then(res => (this.countries = res.data));
-      axios
-        .get("http://localhost:3000/translator")
-        .then(res => (this.translator = res.data));
     }
   }
 };
