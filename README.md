@@ -17,8 +17,21 @@ If there are error
 
     npm audit fix
 
+# **Important step** | To simule api with json files
+
+Install json-server
+
+    npm install json-server -g
+
+Run json server 
+
+    json-server data/data.json 
+
+In other terminal run the site...
+
 # Run site
 
 Run serv
 
     npm run serve
+
