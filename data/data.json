@@ -1,0 +1,514 @@
+{
+    "countries": {
+        "Switzerland": {
+            "languages": [
+                "fr",
+                "en",
+                "ge",
+                "it"
+            ],
+            "default_language": "fr",
+            "prefix": true,
+            "default_currency": "CHF"
+        },
+        "France": {
+            "languages": [
+                "fr"
+            ],
+            "default_language": "fr",
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        "Italy": {
+            "languages": [
+                "it"
+            ],
+            "default_language": "it",
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        "العالم العربي": {
+            "languages": [
+                "en",
+                "ar"
+            ],
+            "default_language": "ar",
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        "Argentina": {
+            "languages": [
+                "es"
+            ],
+            "default_language": "es",
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        "Australia": {
+            "languages": [
+                "en"
+            ],
+            "default_language": "en",
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        "България": {
+            "languages": [
+                "bu"
+            ],
+            "default_language": "bu",
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        "België": {
+            "languages": [
+                "du",
+                "fr",
+                "ge"
+            ],
+            "default_language": "BE",
+            "prefix": false,
+            "default_currency": "eur"
+        },
+        "Brasil": {
+            "languages": [
+                "pt"
+            ],
+            "default_language": "pt",
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        "Canada": {
+            "languages": [
+                "en",
+                "fr"
+            ],
+            "default_language": "fr",
+            "prefix": false,
+            "default_currency": "eur"
+        },
+        "Česko": {
+            "languages": [
+                "cz"
+            ],
+            "default_language": "cz",
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        "Chile": {
+            "languages": [
+                "es"
+            ],
+            "default_language": "es",
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        "Colombia": {
+            "languages": [
+                "es"
+            ],
+            "default_language": "es",
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        "Danmark": {
+            "languages": [
+                "da"
+            ],
+            "default_language": "da",
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        "Deutschland": {
+            "languages": [
+                "ge"
+            ],
+            "default_language": "ge",
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        "Ecuador": {
+            "languages": [
+                "es"
+            ],
+            "default_language": "es",
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        "Ελλάδα": {
+            "languages": [
+                "GR"
+            ],
+            "default_language": "GR",
+            "prefix": true,
+            "default_currency": "usd"
+        },
+        "España": {
+            "languages": [
+                "es"
+            ],
+            "default_language": "es",
+            "prefix": true,
+            "default_currency": "eur"
+        }
+    },
+    "currencies": {
+        "AED": {
+            "sign": "د.إ",
+            "text": "AED - Dirham des E.A.U"
+        },
+        "ARS": {
+            "sign": "$",
+            "text": "ARS - Peso argentino"
+        },
+        "AUD": {
+            "sign": "A$",
+            "text": "AUD - Dollar australien"
+        },
+        "AZN": {
+            "sign": "qəpik",
+            "text": "AZN - Manat azerbaïdjanais"
+        },
+        "BGN": {
+            "sign": "Лв",
+            "text": "BGN - Lev bulgare"
+        },
+        "BHD": {
+            "sign": ".د.ب",
+            "text": "BHD - Dinar bahreïni"
+        },
+        "BRL": {
+            "sign": "R$",
+            "text": "BRL - Réal brésilien"
+        },
+        "CAD": {
+            "sign": "C$",
+            "text": "CAD - Dollar canadien"
+        },
+        "CHF": {
+            "sign": "Fr.",
+            "text": "CHF - Franc suisse"
+        },
+        "CLP": {
+            "sign": "$",
+            "text": "CLP - Peso chilien"
+        },
+        "CNY": {
+            "sign": "¥",
+            "text": "CNY - Yuan chinois"
+        },
+        "COP": {
+            "sign": "$",
+            "text": "COP - Peso colombien"
+        },
+        "CZK": {
+            "sign": "Kč",
+            "text": "CZK - Couronne tchèque"
+        },
+        "DKK": {
+            "sign": "Kr.",
+            "text": "DKK - Couronne danoise"
+        },
+        "DZD": {
+            "sign": "دج",
+            "text": "DZD - Dinar algérien"
+        },
+        "EGP": {
+            "sign": "ج.م",
+            "text": "EGP - Livre égyptienne"
+        },
+        "EUR": {
+            "sign": "€",
+            "text": "EUR - Euro"
+        },
+        "GBP": {
+            "sign": "£",
+            "text": "GBP - Livre sterling"
+        },
+        "HKD": {
+            "sign": "HK$",
+            "text": "HKD - Dollar Hong Kong"
+        },
+        "HRK": {
+            "sign": "kn",
+            "text": "HRK - Kuna croate"
+        },
+        "HUF": {
+            "sign": "Ft",
+            "text": "HUF - Forint hongrois"
+        },
+        "IDR": {
+            "sign": "Rp",
+            "text": "IDR - Roupie indonésienne"
+        },
+        "ILS": {
+            "sign": "₪",
+            "text": "ILS - Nouveau shekel israélien"
+        },
+        "INR": {
+            "sign": "₹",
+            "text": "INR - Roupie indienne"
+        },
+        "JOD": {
+            "sign": "د.ا",
+            "text": "JOD - Dinar jordanien"
+        },
+        "JPY": {
+            "sign": "¥",
+            "text": "JPY - Yen japonais"
+        },
+        "KRW": {
+            "sign": "₩",
+            "text": "KRW - Won sud-coréen"
+        },
+        "KWD": {
+            "sign": "د.ك",
+            "text": "KWD - Dinar koweïtien"
+        },
+        "KZT": {
+            "sign": "₸",
+            "text": "KZT - Tenge kazakh"
+        },
+        "LBP": {
+            "sign": "ل.ل.",
+            "text": "LBP - Livre libanaise"
+        },
+        "MAD": {
+            "sign": "MAD",
+            "text": "MAD - Dirham marocain"
+        },
+        "MDL": {
+            "sign": "L",
+            "text": "MDL - Leu moldave"
+        },
+        "MXN": {
+            "sign": "Mex$",
+            "text": "MXN - Peso mexicain"
+        },
+        "MYR": {
+            "sign": "RM",
+            "text": "MYR - Ringgit malais"
+        },
+        "NGN": {
+            "sign": "₦",
+            "text": "NGN - Naira nigérien"
+        },
+        "NOK": {
+            "sign": "kr",
+            "text": "NOK - Couronne norvégienne"
+        },
+        "NZD": {
+            "sign": "$",
+            "text": "NZD - Dollar néo-zélandais"
+        },
+        "OMR": {
+            "sign": "ر.ع.",
+            "text": "OMR - Rial omanais"
+        },
+        "PEN": {
+            "sign": "S/",
+            "text": "PEN - Nuevo sol péruvien"
+        },
+        "PHP": {
+            "sign": "₱",
+            "text": "PHP - Peso philippin"
+        },
+        "PLN": {
+            "sign": "zł",
+            "text": "PLN - Zloty polonais"
+        },
+        "QAR": {
+            "sign": "ر.ق",
+            "text": "QAR - Riyal qatari"
+        },
+        "RON": {
+            "sign": "lei",
+            "text": "RON - Leu roumain"
+        },
+        "RSD": {
+            "sign": "din",
+            "text": "RSD - Dinar serbe"
+        },
+        "RUB": {
+            "sign": "$",
+            "text": "RUB - Rouble russe"
+        },
+        "SAR": {
+            "sign": "﷼",
+            "text": "SAR - Riyal saoudien"
+        },
+        "SEK": {
+            "sign": "kr",
+            "text": "SEK - Couronne suédoise"
+        },
+        "SGD": {
+            "sign": "S$",
+            "text": "SGD - Dollar de Singapour"
+        },
+        "THB": {
+            "sign": "฿",
+            "text": "THB - Baht thaïlandais"
+        },
+        "TND": {
+            "sign": "د.ت",
+            "text": "TND - Dinar tunisien"
+        },
+        "TRY": {
+            "sign": "₺",
+            "text": "TRY - Livre turque"
+        },
+        "TWD": {
+            "sign": "NT$",
+            "text": "TWD - Nouveau dollar taïwanais"
+        },
+        "UAH": {
+            "sign": "₴",
+            "text": "UAH - Hyrvnia ukrainien"
+        },
+        "USD": {
+            "sign": "$",
+            "text": "USD - Dollar américain"
+        },
+        "UYU": {
+            "sign": "$U",
+            "text": "UYU - Peso uruguayen"
+        },
+        "VND": {
+            "sign": "₫",
+            "text": "VND - Dong vietnamien"
+        },
+        "ZAR": {
+            "sign": "R",
+            "text": "ZAR - Rand sud-africain"
+        }
+    },
+    "translator": {
+        "main_title": {
+            "en": "Find your ideal hotel and compare prices from different websites",
+            "fr": "Trouvez l’hôtel idéal et comparez les prix de différents sites Web",
+            "ge": "Finden Sie das ideale Hotel und vergleichen Sie Preise von verschiedenen Websites",
+            "it": "Trova l'hotel ideale e confronta i prezzi da diversi siti web"
+        },
+        "main_subtitle": {
+            "en": "Try searching for a city, a specific hotel, or even a landmark!",
+            "fr": "Essayez de rechercher une ville, un hôtel ou même un lieu connu.",
+            "ge": "Versuchen Sie, nach einer Stadt, einem Hotel oder sogar einem berühmten Ort zu suchen.",
+            "it": "Provate a cercare una città, un hotel o anche un luogo famoso."
+        },
+        "destination_placeholder": {
+            "en": "Enter a hotel name or destination",
+            "fr": "Saisir un nom d'hotel ou une destination",
+            "ge": "Geben Sie einen Hotelnamen oder ein Reiseziel ein",
+            "it": "Inserisci il nome di un hotel o di una destinazione"
+        },
+        "search": {
+            "en": "Search",
+            "fr": "Chercher",
+            "ge": "Suche",
+            "it": "Ricerca"
+        },
+        "start_date_description": {
+            "en": "Check in",
+            "fr": "Départ",
+            "ge": "Abreise",
+            "it": "Partenza"
+        },
+        "end_date_description": {
+            "en": "Check out",
+            "fr": "Arrivée",
+            "ge": "Anreise",
+            "it": "Arrivo"
+        },
+        "select_date_placeholder": {
+            "en": "--/--/--",
+            "fr": "--/--/--",
+            "ge": "--/--/--",
+            "it": "--/--/--"
+        },
+        "room_display": {
+            "en": "Room",
+            "fr": "Chambre",
+            "ge": "Haus",
+            "it": "Casa"
+        },
+        "room_description": {
+            "en": [
+                "signle room",
+                "Double room",
+                "Family rooms",
+                "Multiple rooms"
+            ],
+            "fr": [
+                "Chambre simple",
+                "Chambre double",
+                "Chambres familiales",
+                "Chambres multiples"
+            ],
+            "ge": [
+                "Einzelzimmer",
+                "Doppelzimmer",
+                "Familienzimmer",
+                "Mehrere Räume"
+            ],
+            "it": [
+                "Camera singola",
+                "Camera doppia",
+                "Camere per famiglie",
+                "Camere multiple"
+            ]
+        },
+        "menu_login_button": {
+            "en": "Log in",
+            "fr": "Se connecter",
+            "ge": "Einloggen",
+            "it": "Accesso"
+        },
+        "menu_button": {
+            "en": "Menu",
+            "fr": "Menu",
+            "ge": "Menü",
+            "it": "Menu"
+        },
+        "menu_list": {
+            "en": [
+                "Recently viewed",
+                "Booking overview",
+                "Payment methods"
+            ],
+            "fr": [
+                "Consulté récemment",
+                "Aperçu - Réservations",
+                "Moyens de paiement"
+            ],
+            "ge": [
+                "Kürzlich angesehen",
+                "Übersicht - Reservierungen",
+                "Zahlungsmittel"
+            ],
+            "it": [
+                "Visualizzati di recente",
+                "Panoramica - Prenotazioni",
+                "Mezzi di pagamento"
+            ]
+        },
+        "footer_contact_description": {
+            "en": "Would you like to receive exclusive offers? Subscribe to our newsletter!",
+            "fr": "Vous souhaitez recevoir des offres exclusives ? Inscrivez-vous à notre newsletter !",
+            "ge": "Möchten Sie exklusive Angebote erhalten? Abonnieren Sie unseren Newsletter!",
+            "it": "Volete ricevere offerte esclusive? Iscriviti alla nostra newsletter!"
+        },
+        "email_address": {
+            "en": "E-mail address",
+            "fr": "Adresse e-mail",
+            "ge": "Die E-Mail-Adresse",
+            "it": "Indirizzo e-mail"
+        },
+        "sign_up": {
+            "en": "Sign up now",
+            "fr": "S'inscrire",
+            "ge": "Melden Sie sich jetzt an",
+            "it": "Iscriviti ora"
+        }
+    }
+}
+
