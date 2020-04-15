@@ -47,7 +47,7 @@ export default {
       this.$refs.menuList.classList.toggle("hidden");
     },
     changeLanguage: function(lang) {
-      this.$emit('langset', lang.target.value);
+      this.$emit('langSet', lang.target.value);
     },
     openBurgerMenu: function() {
       this.$refs.contentMenu.style.left = 0;

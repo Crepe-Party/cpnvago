@@ -2,7 +2,7 @@
   <div id="app">
     <!--top menu -->
     <top-menu
-      @langset="langUpdate"
+      @langSet="langUpdate"
       :country="country"
       :language="language"
       :currencies="currencies"
