@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     changeCountry: function(country) {
-      this.$emit("countryset", country.target.value);
+      this.$emit("countrySet", country.target.value);
     }
   }
 };

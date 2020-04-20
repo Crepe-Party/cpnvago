@@ -22,6 +22,9 @@
   </div>
 </template>
 <script>
+//modules
+import axios from "axios";
+
 //components
 import TopMenu from "./components/TopMenu.vue";
 import Home from "./components/Home.vue";
@@ -33,10 +36,6 @@ const components = {
   Footer
 };
 
-import countries from "../data/countries.json";
-import currencies from "../data/currencies.json";
-import translator from "../data/translator.json";
-
 export default {
   name: "App",
   components,
@@ -44,10 +43,23 @@ export default {
     return {
       language: "fr",
       country: "Switzerland",
-      currencies,
-      countries,
-      translator
+      currencies: null,
+      countries: null,
+      translator: null
     };
+  },
+  async created() {
+    try {
+      //get data before to create component (theory)
+      const currencies = await axios.get("http://localhost:3000/currencies");
+      const countries = await axios.get("http://localhost:3000/countries");
+      const translator = await axios.get("http://localhost:3000/translator");
+      this.currencies = currencies.data;
+      this.countries = countries.data;
+      this.translator = translator.data;
+    } catch (error) {
+      console.log(error)
+    }
   },
   methods: {
     langUpdate: function(lang) {
