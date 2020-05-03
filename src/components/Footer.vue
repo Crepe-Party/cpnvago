@@ -68,7 +68,6 @@ export default {
   name: "footer",
   props: {
     countries: Array,
-    country: Object,
     translator: Object,
   },
   methods: {

@@ -5,9 +5,7 @@
       @langSet="langUpdate"
       :country="country"
       :language="countryLanguages"
-      :languages="languages"
       :currencies="currencies"
-      :countries="countries"
       :translator="translator"
     />
     <!-- content -->
@@ -16,7 +14,6 @@
     <Footer
       @countrySet="countryUpdate"
       :countries="countries"
-      :country="country"
       :translator="translator"
     />
   </div>

@@ -37,10 +37,8 @@ export default {
   name: "top-menu",
   props: {
     currencies: Array,
-    countries: Array,
     translator: Object,
     language: Array,
-    languages: Array,
     country: Object
   },
   methods: {
