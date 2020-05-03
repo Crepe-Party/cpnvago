@@ -1,0 +1,666 @@
+{
+    "languages": [
+        {
+            "id": 0,
+            "language": "en"
+        },
+        {
+            "id": 1,
+            "language": "fr"
+        },
+        {
+            "id": 2,
+            "language": "de"
+        },
+        {
+            "id": 3,
+            "language": "it"
+        }
+    ],
+    "countries": [
+        {
+            "id": 0,
+            "country": "Switzerland",
+            "languages": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "default_language": 1,
+            "prefix": true,
+            "default_currency": "CHF"
+        },
+        {
+            "id": 1,
+            "country": "France",
+            "languages": [
+                1
+            ],
+            "default_language": 1,
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        {
+            "id": 2,
+            "country": "Italy",
+            "languages": [
+                3
+            ],
+            "default_language": 3,
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        {
+            "id": 3,
+            "country": "العالم العربي",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        {
+            "id": 4,
+            "country": "Argentina",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        {
+            "id": 5,
+            "country": "Australia",
+            "languages": [
+                0
+            ],
+            "default_language":0,
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        {
+            "id": 6,
+            "country": "България",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        {
+            "id": 7,
+            "country": "België",
+            "languages": [
+                1,
+                2
+            ],
+            "default_language": 1,
+            "prefix": false,
+            "default_currency": "eur"
+        },
+        {
+            "id": 8,
+            "country": "Brasil",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        {
+            "id": 9,
+            "country": "Canada",
+            "languages": [
+                0,
+                1
+            ],
+            "default_language": 1,
+            "prefix": false,
+            "default_currency": "eur"
+        },
+        {
+            "id": 10,
+            "country": "Česko",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        {
+            "id": 11,
+            "country": "Chile",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        {
+            "id": 12,
+            "country": "Colombia",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        {
+            "id": 13,
+            "country": "Danmark",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        {
+            "id": 14,
+            "country": "Deutschland",
+            "languages": [
+                1,
+                2
+            ],
+            "default_language": 2,
+            "prefix": true,
+            "default_currency": "eur"
+        },
+        {
+            "id": 15,
+            "country": "Ecuador",
+            "languages": [
+               0
+            ],
+            "default_language": 0,
+            "prefix": false,
+            "default_currency": "usd"
+        },
+        {
+            "id": 16,
+            "country": "Ελλάδα",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": true,
+            "default_currency": "usd"
+        },
+        {
+            "id": 17,
+            "country": "España",
+            "languages": [
+                0
+            ],
+            "default_language": 0,
+            "prefix": true,
+            "default_currency": "eur"
+        }
+    ],
+    "currencies": [
+        {
+            "id": 0,
+            "currency": "AED",
+            "sign": "د.إ",
+            "text": "AED - Dirham des E.A.U"
+        },
+        {
+            "id": 1,
+            "currency": "ARS",
+            "sign": "$",
+            "text": "ARS - Peso argentino"
+        },
+        {
+            "id": 2,
+            "currency": "AUD",
+            "sign": "A$",
+            "text": "AUD - Dollar australien"
+        },
+        {
+            "id": 3,
+            "currency": "AZN",
+            "sign": "qəpik",
+            "text": "AZN - Manat azerbaïdjanais"
+        },
+        {
+            "id": 4,
+            "currency": "BGN",
+            "sign": "Лв",
+            "text": "BGN - Lev bulgare"
+        },
+        {
+            "id": 5,
+            "currency": "BHD",
+            "sign": ".د.ب",
+            "text": "BHD - Dinar bahreïni"
+        },
+        {
+            "id": 6,
+            "currency": "BRL",
+            "sign": "R$",
+            "text": "BRL - Réal brésilien"
+        },
+        {
+            "id": 7,
+            "currency": "CAD",
+            "sign": "C$",
+            "text": "CAD - Dollar canadien"
+        },
+        {
+            "id": 8,
+            "currency": "CHF",
+            "sign": "Fr.",
+            "text": "CHF - Franc suisse"
+        },
+        {
+            "id": 9,
+            "currency": "CLP",
+            "sign": "$",
+            "text": "CLP - Peso chilien"
+        },
+        {
+            "id": 10,
+            "currency": "CNY",
+            "sign": "¥",
+            "text": "CNY - Yuan chinois"
+        },
+        {
+            "id": 11,
+            "currency": "COP",
+            "sign": "$",
+            "text": "COP - Peso colombien"
+        },
+        {
+            "id": 12,
+            "currency": "CZK",
+            "sign": "Kč",
+            "text": "CZK - Couronne tchèque"
+        },
+        {
+            "id": 13,
+            "currency": "DKK",
+            "sign": "Kr.",
+            "text": "DKK - Couronne danoise"
+        },
+        {
+            "id": 14,
+            "currency": "DZD",
+            "sign": "دج",
+            "text": "DZD - Dinar algérien"
+        },
+        {
+            "id": 15,
+            "currency": "EGP",
+            "sign": "ج.م",
+            "text": "EGP - Livre égyptienne"
+        },
+        {
+            "id": 16,
+            "currency": "EUR",
+            "sign": "€",
+            "text": "EUR - Euro"
+        },
+        {
+            "id": 17,
+            "currency": "GBP",
+            "sign": "£",
+            "text": "GBP - Livre sterling"
+        },
+        {
+            "id": 18,
+            "currency": "HKD",
+            "sign": "HK$",
+            "text": "HKD - Dollar Hong Kong"
+        },
+        {
+            "id": 19,
+            "currency": "HRK",
+            "sign": "kn",
+            "text": "HRK - Kuna croate"
+        },
+        {
+            "id": 20,
+            "currency": "HUF",
+            "sign": "Ft",
+            "text": "HUF - Forint hongrois"
+        },
+        {
+            "id": 21,
+            "currency": "IDR",
+            "sign": "Rp",
+            "text": "IDR - Roupie indonésienne"
+        },
+        {
+            "id": 22,
+            "currency": "ILS",
+            "sign": "₪",
+            "text": "ILS - Nouveau shekel israélien"
+        },
+        {
+            "id": 23,
+            "currency": "INR",
+            "sign": "₹",
+            "text": "INR - Roupie indienne"
+        },
+        {
+            "id": 24,
+            "currency": "JOD",
+            "sign": "د.ا",
+            "text": "JOD - Dinar jordanien"
+        },
+        {
+            "id": 25,
+            "currency": "JPY",
+            "sign": "¥",
+            "text": "JPY - Yen japonais"
+        },
+        {
+            "id": 26,
+            "currency": "KRW",
+            "sign": "₩",
+            "text": "KRW - Won sud-coréen"
+        },
+        {
+            "id": 27,
+            "currency": "KWD",
+            "sign": "د.ك",
+            "text": "KWD - Dinar koweïtien"
+        },
+        {
+            "id": 28,
+            "currency": "KZT",
+            "sign": "₸",
+            "text": "KZT - Tenge kazakh"
+        },
+        {
+            "id": 29,
+            "currency": "LBP",
+            "sign": "ل.ل.",
+            "text": "LBP - Livre libanaise"
+        },
+        {
+            "id": 30,
+            "currency": "MAD",
+            "sign": "MAD",
+            "text": "MAD - Dirham marocain"
+        },
+        {
+            "id": 31,
+            "currency": "MDL",
+            "sign": "L",
+            "text": "MDL - Leu moldave"
+        },
+        {
+            "id": 32,
+            "currency": "MXN",
+            "sign": "Mex$",
+            "text": "MXN - Peso mexicain"
+        },
+        {
+            "id": 33,
+            "currency": "MYR",
+            "sign": "RM",
+            "text": "MYR - Ringgit malais"
+        },
+        {
+            "id": 34,
+            "currency": "NGN",
+            "sign": "₦",
+            "text": "NGN - Naira nigérien"
+        },
+        {
+            "id": 35,
+            "currency": "NOK",
+            "sign": "kr",
+            "text": "NOK - Couronne norvégienne"
+        },
+        {
+            "id": 36,
+            "currency": "NZD",
+            "sign": "$",
+            "text": "NZD - Dollar néo-zélandais"
+        },
+        {
+            "id": 37,
+            "currency": "OMR",
+            "sign": "ر.ع.",
+            "text": "OMR - Rial omanais"
+        },
+        {
+            "id": 38,
+            "currency": "PEN",
+            "sign": "S/",
+            "text": "PEN - Nuevo sol péruvien"
+        },
+        {
+            "id": 39,
+            "currency": "PHP",
+            "sign": "₱",
+            "text": "PHP - Peso philippin"
+        },
+        {
+            "id": 40,
+            "currency": "PLN",
+            "sign": "zł",
+            "text": "PLN - Zloty polonais"
+        },
+        {
+            "id": 41,
+            "currency": "QAR",
+            "sign": "ر.ق",
+            "text": "QAR - Riyal qatari"
+        },
+        {
+            "id": 42,
+            "currency": "RON",
+            "sign": "lei",
+            "text": "RON - Leu roumain"
+        },
+        {
+            "id": 43,
+            "currency": "RSD",
+            "sign": "din",
+            "text": "RSD - Dinar serbe"
+        },
+        {
+            "id": 44,
+            "currency": "RUB",
+            "sign": "$",
+            "text": "RUB - Rouble russe"
+        },
+        {
+            "id": 45,
+            "currency": "SAR",
+            "sign": "﷼",
+            "text": "SAR - Riyal saoudien"
+        },
+        {
+            "id": 46,
+            "currency": "SEK",
+            "sign": "kr",
+            "text": "SEK - Couronne suédoise"
+        },
+        {
+            "id": 47,
+            "currency": "SGD",
+            "sign": "S$",
+            "text": "SGD - Dollar de Singapour"
+        },
+        {
+            "id": 48,
+            "currency": "THB",
+            "sign": "฿",
+            "text": "THB - Baht thaïlandais"
+        },
+        {
+            "id": 49,
+            "currency": "TND",
+            "sign": "د.ت",
+            "text": "TND - Dinar tunisien"
+        },
+        {
+            "id": 50,
+            "currency": "TRY",
+            "sign": "₺",
+            "text": "TRY - Livre turque"
+        },
+        {
+            "id": 51,
+            "currency": "TWD",
+            "sign": "NT$",
+            "text": "TWD - Nouveau dollar taïwanais"
+        },
+        {
+            "id": 52,
+            "currency": "UAH",
+            "sign": "₴",
+            "text": "UAH - Hyrvnia ukrainien"
+        },
+        {
+            "id": 53,
+            "currency": "USD",
+            "sign": "$",
+            "text": "USD - Dollar américain"
+        },
+        {
+            "id": 54,
+            "currency": "UYU",
+            "sign": "$U",
+            "text": "UYU - Peso uruguayen"
+        },
+        {
+            "id": 55,
+            "currency": "VND",
+            "sign": "₫",
+            "text": "VND - Dong vietnamien"
+        },
+        {
+            "id": 56,
+            "currency": "ZAR",
+            "sign": "R",
+            "text": "ZAR - Rand sud-africain"
+        }
+    ],
+    "translator": [
+        {
+            "id" : 0,
+            "lang" : "en",
+            "main_title" : "Find your ideal hotel and compare prices from different websites",
+            "main_subtitle" : "Try searching for a city, a specific hotel, or even a landmark!",
+            "destination_placeholder" : "Enter a hotel name or destination",
+            "search": "Search",
+            "start_date_description" : "Check in",
+            "end_date_description" : "Check out",
+            "select_date_placeholder" : "--/--/--",
+            "room_display" : "Room",
+            "room_description" : [
+                "signle room",
+                "Double room",
+                "Family rooms",
+                "Multiple rooms"
+            ],
+            "menu_login_button" : "Log in",
+            "menu_button" : "Menu",
+            "menu_list" : [
+                "Recently viewed",
+                "Booking overview",
+                "Payment methods"
+            ],
+            "footer_contact_description" : "Would you like to receive exclusive offers? Subscribe to our newsletter!",
+            "email_address" : "E-mail address",
+            "sign_up" : "Sign up now"
+        },
+        {
+            "id" : 1,
+            "lang" : "fr",
+            "main_title" : "Trouvez l’hôtel idéal et comparez les prix de différents sites Web",
+            "main_subtitle" : "Essayez de rechercher une ville, un hôtel ou même un lieu connu.",
+            "destination_placeholder" : "Saisir un nom d'hotel ou une destination",
+            "search": "Chercher",
+            "start_date_description" : "Départ",
+            "end_date_description" : "Arrivée",
+            "select_date_placeholder" : "--/--/--",
+            "room_display" : "Chambre",
+            "room_description" : [
+                "Chambre simple",
+                "Chambre double",
+                "Chambres familiales",
+                "Chambres multiples"
+            ],
+            "menu_login_button" : "Se connecter",
+            "menu_button" : "Menu",
+            "menu_list" : [
+                "Consulté récemment",
+                "Aperçu - Réservations",
+                "Moyens de paiement"
+            ],
+            "footer_contact_description" : "Vous souhaitez recevoir des offres exclusives ? Inscrivez-vous à notre newsletter !",
+            "email_address" : "Adresse e-mail",
+            "sign_up" : "S'inscrire"
+        },
+        {
+            "id" : 2,
+            "lang" : "de",
+            "main_title" : "Finden Sie das ideale Hotel und vergleichen Sie Preise von verschiedenen Websites",
+            "main_subtitle" : "Versuchen Sie, nach einer Stadt, einem Hotel oder sogar einem berühmten Ort zu suchen.",
+            "destination_placeholder" : "Geben Sie einen Hotelnamen oder ein Reiseziel ein",
+            "search": "Suche",
+            "start_date_description" : "Abreise",
+            "end_date_description" : "Anreise",
+            "select_date_placeholder" : "--/--/--",
+            "room_display" : "Haus",
+            "room_description" : [
+                "Einzelzimmer",
+                "Doppelzimmer",
+                "Familienzimmer",
+                "Mehrere Räume"
+            ],
+            "menu_login_button" : "Einloggen",
+            "menu_button" : "Menü",
+            "menu_list" : [
+                "Kürzlich angesehen",
+                "Übersicht - Reservierungen",
+                "Zahlungsmittel"
+            ],
+            "footer_contact_description" : "Möchten Sie exklusive Angebote erhalten? Abonnieren Sie unseren Newsletter!",
+            "email_address" : "Die E-Mail-Adresse",
+            "sign_up" : "Melden Sie sich jetzt an"
+        },
+        {
+            "id" : 3,
+            "lang" : "it",
+            "main_title" : "Trova l'hotel ideale e confronta i prezzi da diversi siti web",
+            "main_subtitle" : "Provate a cercare una città, un hotel o anche un luogo famoso.",
+            "destination_placeholder" : "Inserisci il nome di un hotel o di una destinazione",
+            "search": "Ricerca",
+            "start_date_description" : "Partenza",
+            "end_date_description" : "Arrivo",
+            "select_date_placeholder" : "--/--/--",
+            "room_display" : "Casa",
+            "room_description" : [
+                "Camera singola",
+                "Camera doppia",
+                "Camere per famiglie",
+                "Camere multiple"
+            ],
+            "menu_login_button" : "Accesso",
+            "menu_button" : "Menu",
+            "menu_list" : [
+                "Visualizzati di recente",
+                "Panoramica - Prenotazioni",
+                "Mezzi di pagamento"
+            ],
+            "footer_contact_description" : "Volete ricevere offerte esclusive? Iscriviti alla nostra newsletter!",
+            "email_address" : "Indirizzo e-mail",
+            "sign_up" : "Iscriviti ora"
+        }
+    ]
+}

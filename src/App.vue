@@ -2,30 +2,34 @@
   <div id="app">
     <!--top menu -->
     <top-menu
-      @langset="langupdate"
+      @langSet="langUpdate"
       :country="country"
-      :language="language"
+      :language="countryLanguages"
       :currencies="currencies"
-      :countries="countries"
       :translator="translator"
     />
     <!-- content -->
-    <home :translator="translator" :language="language" />
+    <home :translator="translator"/>
     <!-- footer -->
     <Footer
-      @countryset="countryupdate"
+      @countrySet="countryUpdate"
       :countries="countries"
-      :country="country"
       :translator="translator"
-      :language="language"
     />
   </div>
 </template>
 <script>
+//modules
+import axios from "axios";
+
 //components
 import TopMenu from "./components/TopMenu.vue";
 import Home from "./components/Home.vue";
 import Footer from "./components/Footer.vue";
+import Country from "./objects/country.js";
+import Currency from "./objects/currency.js";
+import Translator from "./objects/translator.js";
+import Language from "./objects/language.js";
 
 const components = {
   TopMenu,
@@ -33,29 +37,56 @@ const components = {
   Footer
 };
 
-import countries from "../data/countries.json";
-import currencies from "../data/currencies.json";
-import translator from "../data/translator.json";
-
 export default {
   name: "App",
   components,
   data() {
     return {
-      language: "fr",
-      country: "Switzerland",
-      currencies,
-      countries,
-      translator
+      defaultLanguage: 1,
+      defaultCountry: 0,
+      countryLanguages: [],
+      country: null,
+      languages: [],
+      currencies: [],
+      countries: [],
+      translator: null
     };
   },
+  async created() {
+    try {
+      //get data before to create component (theory)
+      const currencies = await axios.get("http://localhost:3000/currencies");
+      const countries = await axios.get("http://localhost:3000/countries");
+      const languages = await axios.get("http://localhost:3000/languages");
+      const translator = await axios.get("http://localhost:3000/translator/"+this.defaultLanguage);
+      for (const currency in currencies.data) {
+        this.currencies.push(new Currency(currencies.data[currency]));
+      }
+      for (const country in countries.data) {
+        if(countries.data[country].id == this.defaultCountry){
+          this.country = new Country(countries.data[country]);
+        }
+        this.countries.push(new Country(countries.data[country]));
+      }
+      for (const language in languages.data) {
+        this.languages.push(new Language(languages.data[language]));
+      }
+      this.translator = new Translator(translator.data);
+      this.countryLanguages = this.country.getLanguages(this.languages);
+    } catch (error) {
+      console.log(error)
+    }
+  },
   methods: {
-    langupdate: function(lang) {
-      this.language = lang;
+    langUpdate: async function(lang) {
+      const translator = await axios.get("http://localhost:3000/translator/"+lang);
+        this.translator = new Translator(translator.data);
     },
-    countryupdate: function(country) {
-      this.country = country;
-      this.langupdate(this.countries[this.country].default_language);
+    countryUpdate: async function(id) {
+      const country = await axios.get("http://localhost:3000/countries/"+id);
+      this.country = new Country(country.data);
+      this.countryLanguages = this.country.getLanguages(this.languages);
+      this.langUpdate(this.country.default_language);
     }
   }
 };

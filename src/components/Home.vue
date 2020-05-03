@@ -4,44 +4,44 @@
       <div class="logo-home" />
       <div>
         <div class="text-find-hotel">
-          <b>{{translator.main_title[language]}}</b>
+          <b>{{translator.main_title}}</b>
         </div>
-        <div>{{translator.main_subtitle[language]}}</div>
+        <div>{{translator.main_subtitle}}</div>
       </div>
     </div>
     <div class="flex search-filters">
       <div class="search-filter search-text">
         <div class="search-img-logo" />
-        <input class="search-input-text" type="search" :placeholder="translator.destination_placeholder[language]"/>
+        <input class="search-input-text" type="search" :placeholder="translator.destination_placeholder"/>
       </div>
       <div class="flex search-filter">
         <div class="search-img-calandar" />
         <div>
-          <div class="search-date-text">{{translator.start_date_description[language]}}</div>
+          <div class="search-date-text">{{translator.start_date_description}}</div>
           <input type="date" />
         </div>
         <div>
-          <div class="search-date-text">{{translator.end_date_description[language]}}</div>
+          <div class="search-date-text">{{translator.end_date_description}}</div>
           <input type="date" />
         </div>
       </div>
       <button class="search-filter">
         <div class="search-img-chamber" />
           <div v-on:click="displayRoom">
-          <div>{{translator.room_display[language]}}</div>
+          <div>{{translator.room_display}}</div>
           <b>
-            <div>{{ translator.menu_list[language][0] }}</div> 
+            <div>{{ translator.menu_list[0] }}</div> 
           </b>
         </div>
         <div id="roomList" ref="roomList" class="hidden">
-          <div v-for="room_list in translator.menu_list[language]" :key="room_list.key" v-on:click="room=room_list">
+          <div v-for="room_list in translator.menu_list" :key="room_list.key" v-on:click="room=room_list">
             <img :class="room_list" />
             {{room_list}}
           </div>
         </div>
       </button>
       <button class="search-btn">
-        <div>{{translator.search[language]}}</div>
+        <div>{{translator.search}}</div>
         <div class="icon-search"></div>
       </button>
     </div>
@@ -53,7 +53,6 @@ export default {
   name: "home",
   props: {
     translator: Object,
-    language: String
   },
   methods: {
     displayRoom: function() {
