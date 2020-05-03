@@ -24,7 +24,7 @@
         </div>
         <div>
           <select v-on:change="changeLanguage($event)">
-            <option :selected="lang == country.default_language" v-for="lang in language" :key="lang.id" :value="lang.id">{{lang.language.toUpperCase()}}</option>
+            <option :selected="lang.id == country.default_language" v-for="lang in language" :key="lang.id" :value="lang.id">{{lang.language.toUpperCase()}}</option>
           </select>
         </div>
       </div>

@@ -167,8 +167,8 @@
             "id": 14,
             "country": "Deutschland",
             "languages": [
-                2,
-                1
+                1,
+                2
             ],
             "default_language": 2,
             "prefix": true,
