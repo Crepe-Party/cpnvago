@@ -1,110 +1,189 @@
-{
-    "Switzerland": {
-        "languages": ["fr", "en","ge","it"],
+[
+    {
+        "id": 0,
+        "country": "Switzerland",
+        "languages": [
+            "fr",
+            "en",
+            "ge",
+            "it"
+        ],
         "default_language": "fr",
         "prefix": true,
-        "default_currency" : "CHF" 
+        "default_currency": "CHF"
     },
-    "France": {
-        "languages": ["fr"],
+    {
+        "id": 1,
+        "country": "France",
+        "languages": [
+            "fr"
+        ],
         "default_language": "fr",
         "prefix": true,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "Italy": {
-        "languages": ["it"],
+    {
+        "id": 2,
+        "country": "Italy",
+        "languages": [
+            "it"
+        ],
         "default_language": "it",
         "prefix": true,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "العالم العربي": {
-        "languages": ["en","ar"],
+    {
+        "id": 2,
+        "country": "العالم العربي",
+        "languages": [
+            "en",
+            "ar"
+        ],
         "default_language": "ar",
         "prefix": false,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "Argentina": {
-        "languages": ["es"],
+    {
+        "id": 3,
+        "country": "Argentina",
+        "languages": [
+            "es"
+        ],
         "default_language": "es",
         "prefix": false,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "Australia": {
-        "languages": ["en"],
+    {
+        "id": 4,
+        "country": "Australia",
+        "languages": [
+            "en"
+        ],
         "default_language": "en",
         "prefix": false,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "България": {
-        "languages": ["bu"],
+    {
+        "id": 5,
+        "country": "България",
+        "languages": [
+            "bu"
+        ],
         "default_language": "bu",
         "prefix": true,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "België": {
-        "languages": ["du","fr","ge"],
+    {
+        "id": 6,
+        "country": "België",
+        "languages": [
+            "du",
+            "fr",
+            "ge"
+        ],
         "default_language": "BE",
         "prefix": false,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "Brasil": {
-        "languages": ["pt"],
+    {
+        "id": 7,
+        "country": "Brasil",
+        "languages": [
+            "pt"
+        ],
         "default_language": "pt",
         "prefix": false,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "Canada": {
-        "languages": ["en","fr"],
+    {
+        "id": 8,
+        "country": "Canada",
+        "languages": [
+            "en",
+            "fr"
+        ],
         "default_language": "fr",
         "prefix": false,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "Česko": {
-        "languages": ["cz"],
+    {
+        "id": 9,
+        "country": "Česko",
+        "languages": [
+            "cz"
+        ],
         "default_language": "cz",
         "prefix": true,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "Chile": {
-        "languages": ["es"],
+    {
+        "id": 10,
+        "country": "Chile",
+        "languages": [
+            "es"
+        ],
         "default_language": "es",
         "prefix": false,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "Colombia": {
-        "languages": ["es"],
+    {
+        "id": 11,
+        "country": "Colombia",
+        "languages": [
+            "es"
+        ],
         "default_language": "es",
         "prefix": false,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "Danmark": {
-        "languages": ["da"],
+    {
+        "id": 12,
+        "country": "Danmark",
+        "languages": [
+            "da"
+        ],
         "default_language": "da",
         "prefix": true,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "Deutschland": {
-        "languages": ["ge"],
+    {
+        "id": 13,
+        "country": "Deutschland",
+        "languages": [
+            "ge"
+        ],
         "default_language": "ge",
         "prefix": true,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     },
-    "Ecuador": {
-        "languages": ["es"],
+    {
+        "id": 14,
+        "country": "Ecuador",
+        "languages": [
+            "es"
+        ],
         "default_language": "es",
         "prefix": false,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "Ελλάδα": {
-        "languages": ["GR"],
+    {
+        "id": 15,
+        "country": "Ελλάδα",
+        "languages": [
+            "GR"
+        ],
         "default_language": "GR",
         "prefix": true,
-        "default_currency" : "usd" 
+        "default_currency": "usd"
     },
-    "España": {
-        "languages": ["es"],
+    {
+        "id": 16,
+        "country": "España",
+        "languages": [
+            "es"
+        ],
         "default_language": "es",
         "prefix": true,
-        "default_currency" : "eur" 
+        "default_currency": "eur"
     }
-}
+]
