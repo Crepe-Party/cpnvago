@@ -2,22 +2,22 @@
   <footer>
     <div id="upperfooter">
       <form id="contact-zone">
-        <label for="footer-contact-input">{{translator.footer_contact_description[language]}}</label>
+        <label for="footer-contact-input">{{translator.footer_contact_description}}</label>
         <input
           id="footer-contact-input"
           type="email"
-          :placeholder="translator.email_address[language]"
+          :placeholder="translator.email_address"
         />
-        <button type="submit">{{translator.sign_up[language]}}</button>
+        <button type="submit">{{translator.sign_up}}</button>
       </form>
       <select id="country-selector" v-on:change="changeCountry($event)">
         <option
-          :selected="index == country"
-          v-for="(value,index) in countries"
-          :key="index"
+          :selected="data.country == country"
+          v-for="data in countries"
+          :key="data.id"
           class="option"
-          :value="index"
-        >{{index}}</option>
+          :value="data.id"
+        >{{data.country}}</option>
       </select>
     </div>
     <div id="subfooter">
@@ -67,10 +67,9 @@
 export default {
   name: "footer",
   props: {
-    countries: Object,
-    country: String,
+    countries: Array,
+    country: Object,
     translator: Object,
-    language: String
   },
   methods: {
     changeCountry: function(country) {

@@ -6,25 +6,25 @@
       <div id="contentMenu" ref="contentMenu" class="content-menu flex">
         <div class="flex head-burger-menu">
           <div v-on:click="closeBurgerMenu" class="close-menu hidden">&lt;</div>
-          <div class="title-menu">{{translator.menu_button[language]}}</div>
+          <div class="title-menu">{{translator.menu_button}}</div>
         </div>
-        <button class="btn-header">{{translator.menu_login_button[language]}}</button>
+        <button class="btn-header">{{translator.menu_login_button}}</button>
         <div>
-          <button v-on:click="displayMenuList" class="btn-header btn-menu">{{translator.menu_button[language]}}</button>
+          <button v-on:click="displayMenuList" class="btn-header btn-menu">{{translator.menu_button}}</button>
           <div id="menuList" ref="menuList" class="hidden">
-            <div v-for="list in translator.menu_list[language]" :key="list.key">{{list}}</div>
+            <div v-for="list in translator.menu_list" :key="list.key">{{list}}</div>
           </div>
         </div>
         <div>
           <select>
             <optgroup label="Toutes les devises">
-              <option :selected="index.toUpperCase() == countries[country].default_currency.toUpperCase()" v-for="(currency,index) in currencies" :key="index" class="option" :value="index">{{currency.text}}</option>
+              <option :selected="currency.currency.toUpperCase() == country.default_currency.toUpperCase()" v-for="currency in currencies" :key="currency.id" class="option" :value="currency.currency">{{currency.text}}</option>
             </optgroup>
           </select>
         </div>
         <div>
           <select v-on:change="changeLanguage($event)">
-            <option :selected="language == countries[country].default_language" v-for="language of countries[country].languages" :key="language" :value="language">{{language.toUpperCase()}}</option>
+            <option :selected="lang == country.default_language" v-for="lang in language" :key="lang.id" :value="lang.id">{{lang.language.toUpperCase()}}</option>
           </select>
         </div>
       </div>
@@ -36,11 +36,12 @@
 export default {
   name: "top-menu",
   props: {
-    currencies: Object,
-    countries: Object,
+    currencies: Array,
+    countries: Array,
     translator: Object,
-    language: String,
-    country: String
+    language: Array,
+    languages: Array,
+    country: Object
   },
   methods: {
     displayMenuList: function() {

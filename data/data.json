@@ -52,7 +52,7 @@
             "default_currency": "eur"
         },
         {
-            "id": 2,
+            "id": 3,
             "country": "العالم العربي",
             "languages": [
                 0
@@ -62,7 +62,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 3,
+            "id": 4,
             "country": "Argentina",
             "languages": [
                 0
@@ -72,7 +72,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 4,
+            "id": 5,
             "country": "Australia",
             "languages": [
                 0
@@ -82,7 +82,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 5,
+            "id": 6,
             "country": "България",
             "languages": [
                 0
@@ -92,7 +92,7 @@
             "default_currency": "eur"
         },
         {
-            "id": 6,
+            "id": 7,
             "country": "België",
             "languages": [
                 1,
@@ -103,7 +103,7 @@
             "default_currency": "eur"
         },
         {
-            "id": 7,
+            "id": 8,
             "country": "Brasil",
             "languages": [
                 0
@@ -113,7 +113,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 8,
+            "id": 9,
             "country": "Canada",
             "languages": [
                 0,
@@ -124,7 +124,7 @@
             "default_currency": "eur"
         },
         {
-            "id": 9,
+            "id": 10,
             "country": "Česko",
             "languages": [
                 0
@@ -134,7 +134,7 @@
             "default_currency": "eur"
         },
         {
-            "id": 10,
+            "id": 11,
             "country": "Chile",
             "languages": [
                 0
@@ -144,7 +144,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 11,
+            "id": 12,
             "country": "Colombia",
             "languages": [
                 0
@@ -154,7 +154,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 12,
+            "id": 13,
             "country": "Danmark",
             "languages": [
                 0
@@ -164,17 +164,18 @@
             "default_currency": "eur"
         },
         {
-            "id": 13,
+            "id": 14,
             "country": "Deutschland",
             "languages": [
-                2
+                2,
+                1
             ],
             "default_language": 2,
             "prefix": true,
             "default_currency": "eur"
         },
         {
-            "id": 14,
+            "id": 15,
             "country": "Ecuador",
             "languages": [
                0
@@ -184,7 +185,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 15,
+            "id": 16,
             "country": "Ελλάδα",
             "languages": [
                 0
@@ -194,7 +195,7 @@
             "default_currency": "usd"
         },
         {
-            "id": 16,
+            "id": 17,
             "country": "España",
             "languages": [
                 0
